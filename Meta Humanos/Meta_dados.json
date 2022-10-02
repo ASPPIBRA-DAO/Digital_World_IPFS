@@ -1,0 +1,71 @@
+{
+    "Hash_image_face": "QmR7JVHTBZv5zMQeFhFEBm1nmKXy3dtzp6cgU9K2pxiwnS",
+    "Hash_image_body": "QmZrpkFT7Ri1vdt4WWVroMRn1pjeps9p1Vhywiv4NUxz9i",
+    "name": "Narinsq Sea from Shevaiod Marramdy",
+    "description": "The first Meta Human Avatar to be registered on the blockchain is Shevaiod Marramdy's Narinsq Sea, also known as Marramdy. he is an Organic Traffic Distributor within Meta Verso and works to integrate the physical world with Meta Verso. Narinsq believes that the goal of Meta Verso can offer more job opportunities than the physical world and is willing to accelerate this integration with Meta Mundo, people will be able to work anywhere in Meta Verso and reside on any planet or satellite. even without leaving home..",
+    "Collection": "Meta_Humanos",
+    "image_face": "https://ipfs.io/ipfs/QmR7JVHTBZv5zMQeFhFEBm1nmKXy3dtzp6cgU9K2pxiwnS?filename=Captura%20de%20tela%202022-07-17%20192450.png",
+    "image_body": "https://ipfs.io/ipfs/QmZrpkFT7Ri1vdt4WWVroMRn1pjeps9p1Vhywiv4NUxz9i?filename=Captura%20de%20tela%202022-07-17%20192628.png",
+    "attributes": [
+      {
+        "trait_type": "Idade",
+        "value": "0"
+      },
+      {
+        "trait_type": "Estatura",
+        "value": "1.78m"
+      },
+      {
+        "trait_type": "Clone",
+        "value": "0"
+      },
+      {
+        "trait_type": "Peso",
+        "value": "0"
+      },
+      {
+        "trait_type": "Fator RH",
+        "value": "0"
+      },{
+        "trait_type": "Pele",
+        "value": "Morena"
+      },
+      {
+        "trait_type": "Sexo",
+        "value": "Masculino"
+      },
+      {
+        "trait_type": "Idioma",
+        "value": "Ai Global"
+      },
+      {
+        "trait_type": "RG",
+        "value": "**********"
+      },
+      {
+        "trait_type": "CPF",
+        "value": "**********"
+      },
+      {
+        "trait_type": "Estado Civil",
+        "value": "Solteiro"
+      },
+      {
+        "trait_type": "Nacionalidade",
+        "value": "Meta World"
+      },
+      {
+        "trait_type": "Profissão",
+        "value": "Distribuidor de Tráfego Orgânico"
+      },
+      {
+        "trait_type": "Assinatura",
+        "value": "*********************"
+      }
+      
+    ],
+    "category": "Collectibles",
+    "wallet_creator": "0x208bA54E9e35eBBAC73FCa9071C155724a56e014",
+    "royalty_creator": "0%"
+    
+  }
