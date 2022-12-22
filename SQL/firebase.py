@@ -1,25 +1,9 @@
-import firebase_admin
-from firebase_admin import credentials
 import requests
 import json
-import pyrebase
 
 
-firebaseConfig = {
-  apiKey: "AIzaSyBXKIBhOKQuiX8g6fF8NBRA5jGVqzzz6ls",
-  authDomain: "novo-mundo-46d03.firebaseapp.com",
-  databaseURL: "https://novo-mundo-46d03-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "novo-mundo-46d03",
-  storageBucket: "novo-mundo-46d03.appspot.com",
-  messagingSenderId: "995186946108",
-  appId: "1:995186946108:web:ab3a0485c4b929934e1339",
-  measurementId: "G-3MG8J8Q5PW"
-};
 
-cred = credentials.Certificate("path/to/serviceAccountKey.json")
-firebase_admin=pyrebase.initialize_app(cred)
-
-link = "https://novo-mundo-46d03-default-rtdb.asia-southeast1.firebasedatabase.app/"
+link = "https://world-digital-app-default-rtdb.asia-southeast1.firebasedatabase.app/"
 
 
 
