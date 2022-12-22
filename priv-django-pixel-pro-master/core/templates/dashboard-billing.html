@@ -1,0 +1,275 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard Biling {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block nav_style %} navbar-light navbar-transparent navbar-theme-secondary {% endblock nav_style %}
+
+{% block content %}
+
+    <div class="section section-lg pt-5 pt-md-7 bg-gray-200">
+        <div class="container">
+            <div class="row pt-5 pt-md-0">
+                
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <!-- Navigation -->
+                    <div class="card border-gray-300 p-2">
+                        <div class="card-header bg-white border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
+                            <div class="profile-thumbnail dashboard-avatar mx-lg-auto me-3">
+                                <img src="/static/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bonnie Green Portrait">
+                            </div>
+                            <span class="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, Bonnie!</span>
+                            <a href="#" class="btn btn-gray-300 btn-xs"><span class="me-2"><span class="fas fa-sign-out-alt"></span></span>Sign Out</a>
+                        </div>
+                        <div class="card-body p-2 d-none d-lg-block">
+                            <div class="list-group dashboard-menu list-group-sm">
+                                <a href="/dashboard-account.html" class="d-flex list-group-item border-0 list-group-item-action ">Overview <span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-settings.html" class="d-flex list-group-item border-0 list-group-item-action ">Settings<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-my-items.html" class="d-flex list-group-item border-0 list-group-item-action ">My Items<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-security.html" class="d-flex list-group-item border-0 list-group-item-action ">Security<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-billing.html" class="d-flex list-group-item border-0 list-group-item-action  active ">Billing<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-messages.html" class="d-flex list-group-item border-0 list-group-item-action  border-0">Messages<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <div class="card bg-white border-gray-300 mb-4 mb-lg-5">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-10 d-flex">
+                                    <a href="/dashboard-account.html" class="list-group-item list-group-item-action border-0 text-center me-2 ">Overview</a>
+                                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action border-0 text-center me-2 ">Settings</a>
+                                    <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action border-0 text-center me-2 d-none d-sm-block border-0 ">My Items</a>
+                                    <a href="/dashboard-security.html" class="list-group-item list-group-item-action border-0 text-center d-none d-md-block border-0 ">Security</a>
+                                </div>
+                                <div class="col-2 d-flex justify-content-center">
+                                    <div class="btn-group dropleft">
+                                        <button class="btn btn-link dropdown-toggle dropdown-toggle-split me-2 m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon icon-sm">
+                                                <span class="fas fa-ellipsis-h icon-secondary fa-lg"></span>
+                                            </span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action d-sm-none border-0 ">My Items</a>
+                                            <a href="/dashboard-security.html" class="list-group-item list-group-item-action d-md-none border-0 ">Security</a>
+                                            <a href="/dashboard-billing.html" class="list-group-item list-group-item-action border-0  active ">Billing</a>
+                                            <a href="/dashboard-messages.html" class="list-group-item list-group-item-action border-0 ">Messages</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="row mb-5">
+                        <div class="col-12 mb-4">
+                            <div class="card border-gray-300 text-center py-4 mb-4">
+                                <div class="card-body">
+                                    <h2 class="display-3 mb-3">Pixel<span class="pixel-pro-badge subscription-badge bg-tertiary fw-bolder text-white">PRO</span></h2>
+                                    <p class="my-4">Next payment of <span class="fw-bold">$36 (yearly)</span> occurs on August 13, 2021.</p>
+                                    <a class="btn btn-sm btn-dark" href="#">Cancel subscription</a>
+                                </div>
+                            </div>
+                            <form action="#" method="post" class="card border-gray-300 p-3 mb-4">
+                                <div class="card-header bg-white border-gray-300 p-3 mb-4 mb-md-0">
+                                    <h3 class="h5 mb-0">Billing details</h3> 
+                                </div>
+                                <div class="card-body p-0 p-md-4">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Form -->
+                                            <div class="mb-4">
+                                                <label for="cartInputEmail1">Email address *</label>
+                                                <input type="email" class="form-control" placeholder="example@company.com" id="cartInputEmail1" required>
+                                            </div>
+                                            <!-- End of Form -->
+                                        </div>
+                                        <div class="col-12 col-lg-6 mb-4">
+                                            <!--Form-->
+                                            <label class="my-1 me-2" for="inlineFormCustomSelectBilling">Country</label>
+                                            <select class="form-select" id="inlineFormCustomSelectBilling" aria-label="Messages select example">
+                                                <option selected>Choose...</option>
+                                                <option value="1">United States</option>
+                                                <option value="2">Germany</option>
+                                                <option value="3">Canada</option>
+                                            </select>
+                                            <!-- End of Form -->
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Form -->
+                                            <div class="mb-4">
+                                                <label for="cartInputAddress1">Address</label>
+                                                <input type="text" placeholder="Texas" class="form-control" id="cartInputAddress1">
+                                            </div>
+                                            <!-- End of Form -->
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Form -->
+                                            <div class="mb-4">
+                                                <label for="cartInputCity1">City</label>
+                                                <input type="text" placeholder="Dallas" class="form-control" id="cartInputCity1">
+                                            </div>
+                                            <!-- End of Form -->
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Form -->
+                                            <div class="mb-4">
+                                                <label for="cartInputZip1">Zip/Postal code</label>
+                                                <input type="number" placeholder="123456" class="form-control" id="cartInputZip1">
+                                            </div>
+                                            <!-- End of Form -->
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Form -->
+                                            <div class="mb-4">
+                                                <label for="cartInputCompany1">Company Name *</label>
+                                                <input type="text" placeholder="Company LLC" class="form-control" id="cartInputCompany1" required>
+                                            </div>
+                                            <!-- End of Form -->
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Form -->
+                                            <div class="mb-4">
+                                                <label for="cartInputVAT1">VAT ID</label>
+                                                <input type="number" placeholder="NL232142" class="form-control" id="cartInputVAT1">
+                                            </div>
+                                            <!-- End of Form -->
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <!-- Form -->
+                                            <div class="mb-4">
+                                                <label for="cartInputPhone1">Phone Number</label>
+                                                <input type="number" placeholder="+(12)345 6789" class="form-control" id="cartInputPhone1">
+                                            </div>
+                                            <!-- End of Form -->
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary btn-dark mt-2 animate-up-2" type="submit">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="#" method="post" class="card border-gray-300 p-3 mb-4">
+                                <div class="card-header bg-white border-gray-300 p-3 mb-4 mb-md-0">
+                                    <h3 class="h5 mb-0">Card details</h3> 
+                                </div>
+                                <div class="card-body p-0 p-md-4">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div class="mb-4">
+                                                <label class="form-label" for="cardNameLabel"><span class="small text-dark">(Full name as displayed on card)</span></label>
+                                                <div class="input-group mb-4">
+                                                    <input class="form-control" id="cardNameLabel" placeholder="Name on Card *" type="text" required=""> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-4">
+                                                <label class="form-label h6" for="cardNumberLabel">Card Number <span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><span class="fas fa-credit-card"></span></span>
+                                                    <input type="text" class="form-control" id="cardNumberLabel" placeholder="0000 0000 0000 0000" aria-label="Card number" required="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="mb-4">
+                                                <label class="form-label h6" for="cardCVCLabel">CVC <span class="text-danger">*</span></label>
+                                                <input class="form-control" id="cardCVCLabel" placeholder="CVC" type="number" required=""> 
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="mb-4">
+                                                <label class="form-label h6" for="cardExpiryLabel">Card Expiry <span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><span class="fas fa-credit-card"></span></span>
+                                                    <input type="text" class="form-control" id="cardExpiryLabel" placeholder="MM / YY" aria-label="Card expiry" required="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary btn-dark mt-2 animate-up-2" type="submit">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form> 
+                            <div class="card card-body bg-white border-gray-300 p-0 p-md-4">
+                                <div class="card-header bg-white border-0 p-3">
+                                    <h3 class="h5">Order History</h3>
+                                    <p class="small me-lg-10">This is a list of devices that have logged into your account. Revoke any sessions that you do not recognize.</p>
+                                </div>
+                                <div class="card-body px-0 pt-0">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-bottom rounded-0 py-3">
+                                            <div class="row align-items-center">
+                                                <div class="col">                       
+                                                    <h3 class="h6 mb-1">
+                                                        <a href="/dashboard-invoice.html">Invoice #120345</a>
+                                                    </h3>
+                                                    <!-- Text -->
+                                                    <small class="text-gray-700">
+                                                        Billed August 21, 2019
+                                                    </small>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-xs btn-outline-dark">
+                                                        Pay now
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-bottom rounded-0 py-3">
+                                            <div class="row align-items-center">
+                                                <div class="col">                       
+                                                    <h3 class="h6 mb-1">
+                                                        <a href="/dashboard-invoice.html">Invoice #120344</a>
+                                                    </h3>
+                                                    <!-- Text -->
+                                                    <small class="text-gray-700">
+                                                        Billed July 21, 2019
+                                                    </small>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <span class="badge badge-pill badge-success">
+                                                        <span class="text-uppercase fw-bold">Paid</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-bottom rounded-0 py-3">
+                                            <div class="row align-items-center">
+                                                <div class="col">                       
+                                                    <h3 class="h6 mb-1">
+                                                        <a href="/dashboard-invoice.html">Invoice #120343</a>
+                                                    </h3>
+                                                    <!-- Text -->
+                                                    <small class="text-gray-700">
+                                                        Billed June 21, 2019
+                                                    </small>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <span class="badge badge-pill badge-success">
+                                                        <span class="text-uppercase fw-bold">Paid</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

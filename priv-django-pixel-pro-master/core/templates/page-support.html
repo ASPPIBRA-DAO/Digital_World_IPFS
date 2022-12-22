@@ -1,0 +1,185 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Support {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block nav_style %} navbar-dark navbar-theme-secondary {% endblock nav_style %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <section class="section-header bg-primary pb-9 pb-lg-10 text-white ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 text-center">
+                    <h1 class="mb-3">Advice and answers from our team</h1>
+                    <p class="lead px-lg-5 mb-5">Get account assistance, technical support, or help with any other issues.</p>
+                    <form action="#">
+                        <div class="form-group bg-white shadow-soft rounded-pill mb-4 px-3 py-2">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="input-group input-group-merge shadow-none">
+                                        <div class="input-group-text bg-transparent border-0"><span class="fas fa-search"></span></div>
+                                        <input type="text" class="form-control border-0 form-control-flush shadow-none pb-2" placeholder="Search for answers..." required>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-block btn-primary rounded-pill">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pattern bottom"></div>
+    </section>
+    <section class="section section-md pb-0">
+        <div class="container z-2 mt-n9 mt-lg-n10">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                    <!-- Card -->
+                    <a href="/page-support-topic.html" class="card shadow text-center border-gray-300 animate-up-3">
+                        <div class="card-body p-5">
+                            <div class="icon icon-shape icon-shape-secondary rounded-circle mb-4">
+                                <span class="fas fa-clipboard-list"></span>
+                            </div>
+                            <h6 class="text-gray mb-0">Requirements</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                    <!-- Card -->
+                    <a href="/page-support-topic.html" class="card shadow text-center border-gray-300 animate-up-3">
+                        <div class="card-body p-5">
+                            <div class="icon icon-shape icon-shape-secondary rounded-circle mb-4">
+                                <span class="fas fa-receipt"></span>
+                            </div>
+                            <h6 class="text-gray mb-0">Licensing</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                    <!-- Card -->
+                    <a href="/page-support-topic.html" class="card shadow text-center border-gray-300 animate-up-3">
+                        <div class="card-body p-5">
+                            <div class="icon icon-shape icon-shape-secondary rounded-circle mb-4">
+                                <span class="fas fa-code-branch"></span>
+                            </div>
+                            <h6 class="text-gray mb-0">Troubleshooting</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <!-- Card -->
+                    <a href="/page-support-topic.html" class="card shadow text-center border-gray-300 animate-up-3">
+                        <div class="card-body p-5">
+                            <div class="icon icon-shape icon-shape-secondary rounded-circle mb-4">
+                                <span class="fab fa-cloudversify"></span>
+                            </div>
+                            <h6 class="text-gray mb-0">Team and Cloud</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-md bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 mb-3">
+                    <h5>Getting Started</h5>
+                </div>
+                <div class="col-lg-10 mb-3">
+                    <a href="/page-support-topic.html" class="card shadow border-gray-300 animate-up-3 p-0 p-lg-4">     
+                        <div class="card-body">
+                            <h4>Account Settings, Language &amp; Dark Mode</h4>
+                            <p class="lead text-gray mb-4">How to edit account settings such as email addresss, user name, language and switch to dark mode</p>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar-lg">
+                                    <img class="rounded-circle" src="/static/assets/img/team/profile-picture-2.jpg" alt="avatar">
+                                </div>
+                                <div class="small text-gray ms-3">
+                                    <div><span>Updated 2 days ago</span></div>
+                                    <div>Written by&nbsp;<strong>Richard Thomas</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-10 mb-3">
+                    <a href="/page-support-topic.html" class="card shadow border-gray-300 animate-up-3 p-0 p-lg-4">     
+                        <div class="card-body">
+                            <h4>Creating and managing projects: Project Dashboard</h4>
+                            <p class="lead text-gray mb-4">Hot to create a new project and manage its settings on the project dashboard</p>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar-lg">
+                                    <img class="rounded-circle" src="/static/assets/img/team/profile-picture-2.jpg" alt="avatar">
+                                </div>
+                                <div class="small text-gray ms-3">
+                                    <div><span>Updated over a week ago</span></div>
+                                    <div>Written by&nbsp;<strong>Richard Thomas</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-10 mt-5 mb-3">
+                    <h5>Adding & Styling Elements</h5>
+                </div>
+                <div class="col-lg-10 mb-3">
+                    <a href="/page-support-topic.html" class="card shadow border-gray-300 animate-up-3 p-0 p-lg-4">     
+                        <div class="card-body">
+                            <h4>Add & style boxes &amp; other elements</h4>
+                            <p class="lead text-gray mb-4">Hot to create a new project and manage its settings on the project dashboard</p>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar-lg">
+                                    <img class="rounded-circle" src="/static/assets/img/team/profile-picture-2.jpg" alt="avatar">
+                                </div>
+                                <div class="small text-gray ms-3">
+                                    <div><span>Updated over a week ago</span></div>
+                                    <div>Written by&nbsp;<strong>Richard Thomas</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-10 mb-3">
+                    <a href="/page-support-topic.html" class="card shadow border-gray-300 animate-up-3 p-0 p-lg-4">     
+                        <div class="card-body">
+                            <h4>Add &amp; style images</h4>
+                            <p class="lead text-gray mb-4">Hot to create a new project and manage its settings on the project dashboard</p>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar-lg">
+                                    <img class="rounded-circle" src="/static/assets/img/team/profile-picture-2.jpg" alt="avatar">
+                                </div>
+                                <div class="small text-gray ms-3">
+                                    <div><span>Updated over a week ago</span></div>
+                                    <div>Written by&nbsp;<strong>Richard Thomas</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-md bg-gray-200">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="text-center">
+                        <h3 class="mb-4">Can't find what you are looking for? Let us know!</h3>
+                        <a class="text-secondary fw-normal h4" href="/page-contact.html">Drop us a line <span class="icon icon-sm icon-primary ms-1"><i class="fas fa-arrow-right"></i></span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

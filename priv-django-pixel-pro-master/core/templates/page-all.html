@@ -1,0 +1,324 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} All {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block nav_style %} navbar-dark navbar-theme-secondary {% endblock nav_style %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <section class="section-header overflow-hidden pt-7 pt-lg-8 pb-7 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="bootstrap-big-icon d-none d-lg-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="700" height="622" class="d-block my-1" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+                    </div>
+                    <h1 class="fw-bolder display-2">Pixel UI<span class="pixel-pro-badge fw-bolder text-dark">PRO</span></h1>
+                    <h2 class="lead fw-normal text-muted mb-4 px-lg-10">Check out all of the 35 hand-crafted pages</h2>
+                </div>
+            </div>
+        </div>
+        <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2"><svg class="fill-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4"><path d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path></svg></figure>       
+    </section>
+    
+    <section class="section section-md">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><h2 class="mb-4 mb-lg-5">Front Pages</h2></div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-landing-app.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/landing-app.jpg" alt="App landing preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">App Landing<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-landing-freelancer.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/landing-freelancer.jpg" alt="Freelancer landing preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Freelancer Landing<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-landing-crypto.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/landing-crypto.jpg" alt="Crypto landing preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Crypto Landing<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-about.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/about.jpg" alt="About page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">About<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-team.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/team.jpg" alt="Team page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Team<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-profile.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/profile.jpg" alt="About me page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Profile<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-support.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/support.jpg" alt="Support page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Support<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-support-topic.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/support-topic.jpg" alt="Support topic page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Support Topic<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-careers.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/careers.jpg" alt="Careers page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Careers<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-career-single.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/career-single.jpg" alt="Career single page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Career Single<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-blog.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/blog.jpg" alt="Blog page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Blog<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-blog-post.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/blog.jpg" alt="Blog post page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Blog post<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-pricing.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/pricing.jpg" alt="Pricing page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Pricing<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-services.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/services.jpg" alt="Services page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Services<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-contact.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/contact.jpg" alt="Contact page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Contact<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="./terms.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/terms.jpg" alt="Terms page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Terms<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-legal.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/legal.jpg" alt="Legal page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Legal<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-sign-in.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/sign-in.jpg" alt="Sign in page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Sign in<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-sign-up.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/sign-up.jpg" alt="Sign up page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Sign up<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-forgot-password.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/forgot-password.jpg" alt="Forgot password page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Forgot Password<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-reset-password.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/reset-password.jpg" alt="Reset password page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Reset Password<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-blank.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/blank-page.jpg" alt="Blank page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Blank Page<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-maintenance.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/maintenance.jpg" alt="Maintenance page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Maintenance<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-coming-soon.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/coming-soon.jpg" alt="Coming soon page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">Coming soon<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-404.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/404.jpg" alt="404 not found error page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">404 not found<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/page-500.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/500.jpg" alt="500 server error page preview">
+                        <div class="text-center show-on-hover">
+                            <h3 class="h6 m-0 text-center text-white">500 server error<span class="fas fa-external-link-alt ms-2"></span></h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2 class="mb-4 mb-lg-5">Dashboard</h2>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/dashboard-account.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/account.jpg" alt="Account page preview">
+                        <div class="text-center show-on-hover">
+                            <h6 class="m-0 text-center text-white">Overview<span class="fas fa-external-link-alt ms-2"></span></h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/dashboard-settings.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/settings.jpg" alt="Settings page preview">
+                        <div class="text-center show-on-hover">
+                            <h6 class="m-0 text-center text-white">Settings<span class="fas fa-external-link-alt ms-2"></span></h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/dashboard-my-items.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/items.jpg" alt="My Items page preview">
+                        <div class="text-center show-on-hover">
+                            <h6 class="m-0 text-center text-white">My Items<span class="fas fa-external-link-alt ms-2"></span></h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/dashboard-edit-item.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/edit-item.jpg" alt="Edit Item page preview">
+                        <div class="text-center show-on-hover">
+                            <h6 class="m-0 text-center text-white">Edit Item<span class="fas fa-external-link-alt ms-2"></span></h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/dashboard-security.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/security.jpg" alt="Security page preview">
+                        <div class="text-center show-on-hover">
+                            <h6 class="m-0 text-center text-white">Security<span class="fas fa-external-link-alt ms-2"></span></h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/dashboard-invoice.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/invoice.jpg" alt="Invoice page preview">
+                        <div class="text-center show-on-hover">
+                            <h6 class="m-0 text-center text-white">Invoice<span class="fas fa-external-link-alt ms-2"></span></h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/dashboard-billing.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/billing.jpg" alt="Billing page preview">
+                        <div class="text-center show-on-hover">
+                            <h6 class="m-0 text-center text-white">Billing<span class="fas fa-external-link-alt ms-2"></span></h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/dashboard-messages.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/messages.jpg" alt="Messages page preview">
+                        <div class="text-center show-on-hover">
+                            <h6 class="m-0 text-center text-white">Messages<span class="fas fa-external-link-alt ms-2"></span></h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <a href="/dashboard-single-message.html" class="page-preview scale-up-hover-2">
+                        <img class="shadow-lg rounded scale" src="/static/assets/img/presentation/all-pages/single-message.jpg" alt="Single Message page preview">
+                        <div class="text-center show-on-hover">
+                            <h6 class="m-0 text-center text-white">Single Message<span class="fas fa-external-link-alt ms-2"></span></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

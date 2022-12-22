@@ -1,0 +1,272 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Widgets {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <div class="section-header pb-6 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <h1 class="display-3 mb-4">Widgets</h1>
+                    <p class="lead mb-5">Use Pixel's custom widgets to provide useful information in sidebars, footers or other parts of the website.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Hero -->
+    
+    <!-- Section -->
+    <div class="section section-lg">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
+                    <div class="mb-3">
+                        <span class="h6">Top Story</span>
+                    </div>
+                    <div class="blog-card">
+                        <div class="card shadow">
+                            <a href="#"><img src="/static/assets/img/blog/image-1.jpg" class="card-img-top rounded-top" alt="Themesberg office"></a>
+                            <div class="card-body">
+                                <small class="d-block mb-2">January 20, 2019</small>
+                                <h2 class="h5">
+                                    <a href="#">Remote workers</a>
+                                </h2>
+                                <p class="card-text my-2">According to some historical records, some people ...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 px-0 py-0">
+                                <div class="d-grid">
+                                    <a class="btn btn-sm btn-secondary rounded-0 rounded-bottom" href="#">
+                                        <span class="fas fa-book-open me-1"></span> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="mb-3">
+                        <span class="h6">Recent News</span>
+                    </div>
+                    <ul class="list-unstyled news-list">
+                        <li class="row mx-0 mb-4">
+                            <a href="#" class="col-3">
+                                <img src="/static/assets/img/blog/image-1.jpg" alt="Designer desk" class="rounded">
+                            </a>
+                            <div class="col">
+                                <a href="#">
+                                    <h2 class="h6 mb-1">Experience the sound of a modern and clean.</h2>
+                                </a>
+                                <div class="post-meta font-small">
+                                    <a class="text-secondary me-3" href="#"><span class="far fa-comments me-2"></span>50</a>
+                                    <span><span class="far fa-clock me-2"></span>Apr 03, 2019</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row mx-0 mb-4">
+                            <a href="#" class="col-3">
+                                <img src="/static/assets/img/blog/image-2.jpg" alt="Artist room" class="rounded">
+                            </a>
+                            <div class="col">
+                                <a href="#">
+                                    <h2 class="h6 mb-1">Experience the sound of a modern and clean.</h2>
+                                </a>
+                                <div class="post-meta font-small">
+                                    <a class="text-secondary me-3" href="#"><span class="far fa-comments me-2"></span>26</a>
+                                    <span><span class="far fa-clock me-2"></span>Apr 10, 2019</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row mx-0 mb-4">
+                            <a href="#" class="col-3">
+                                <img src="/static/assets/img/blog/image-3.jpg" alt="Graphic artist" class="rounded">
+                            </a>
+                            <div class="col">
+                                <a href="#">
+                                    <h2 class="h6 mb-1">Experience the sound of a modern and clean.</h2>
+                                </a>
+                                <div class="post-meta font-small">
+                                    <a class="text-secondary me-3" href="#"><span class="far fa-comments me-2"></span>12</a>
+                                    <span><span class="far fa-clock me-2"></span>Apr 16, 2019</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-sm-0">
+                    <div class="mb-3">
+                        <span class="h6">Featured News</span>
+                    </div>
+                    <div class="glide-news-widget">
+                        <div data-glide-el="track" class="glide__track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="blog-card">
+                                    <div class="card shadow-sm border-gray-300 shadow">
+                                        <div class="card-body border-bottom">
+                                            <h2 class="h5">
+                                                <a href="#">Remote workers</a>
+                                            </h2>
+                                            <p class="card-text my-2">According to some historical records, some people ...
+                                            </p>
+                                        </div>
+                                        <div class="card-footer bg-white mx-4 px-0">
+                                            <div class="post-meta"><a href="#" class="me-3"><span class="far fa-comments me-2"></span>33</a><span class="font-small"><span class="far fa-clock me-2"></span>Jan 03, 2019</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="blog-card">
+                                    <div class="card shadow-sm border-gray-300 shadow">
+                                        <div class="card-body border-bottom">
+                                            <h2 class="h5">
+                                                <a href="#">Remote workers</a>
+                                            </h2>
+                                            <p class="card-text my-2">According to some historical records, some people ...
+                                            </p>
+                                        </div>
+                                        <div class="card-footer bg-white mx-4 px-0">
+                                            <div class="post-meta"><a href="#" class="me-3"><span class="far fa-comments me-2"></span>33</a><span class="font-small"><span class="far fa-clock me-2"></span>Jan 03, 2019</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="blog-card">
+                                    <div class="card shadow-sm border-gray-300 shadow">
+                                        <div class="card-body border-bottom">
+                                            <h2 class="h5">
+                                                <a href="#">Remote workers</a>
+                                            </h2>
+                                            <p class="card-text my-2">According to some historical records, some people ...
+                                            </p>
+                                        </div>
+                                        <div class="card-footer bg-white mx-4 px-0">
+                                            <div class="post-meta"><a href="#" class="me-3"><span class="far fa-comments me-2"></span>33</a><span class="font-small"><span class="far fa-clock me-2"></span>Jan 03, 2019</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-around">
+                <div class="col-lg-3 col-md-4">
+                    <div class="mb-3">
+                        <span class="h6">Recent Actions</span>
+                    </div>
+                    <ul class="list-group list-group-flush rounded border border-gray-300 shadow py-4 px-2">
+                        <li class="list-group-item border-0"><span class="text-primary">Robert T</span> on <a href="#">Logos and Icons design</a></li>
+                        <li class="list-group-item border-0"><span class="text-primary">Zoltan Z</span> on <a href="#">Best java frameworks</a></li>
+                        <li class="list-group-item border-0"><span class="text-primary">Oana C</span> on <a href="#">Bootstrap 4 framework</a></li>
+                        <li class="list-group-item border-0"><span class="text-primary">George G</span> on <a href="#">Top 10 Ui Kits</a></li>
+                        <li class="list-group-item border-0"><span class="text-primary">Calota A</span> on <a href="#">Angular and other tools</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-5 mt-sm-0">
+                    <div class="mb-3">
+                        <span class="h6">Sidebar Menu</span>
+                    </div>
+                    <ul class="list-group list-group-flush rounded border border-gray-300 shadow">
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                            <a href="#">Messages</a>
+                            <span class="badge bg-primary badge-pill">14</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                            <a href="#">Activity</a>
+                            <span class="badge bg-secondary badge-pill">2</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                            <a href="#">Settings</a>
+                            <span class="badge bg-tertiary badge-pill">1</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-5 mt-sm-0">
+                    <div class="mb-3">
+                        <span class="h6">Updates</span>
+                    </div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start py-3 rounded-0 rounded-top active">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h2 class="h5 mb-3 text-white">List group item heading</h2>
+                                <small>7min</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small>Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start py-3 rounded-0">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h2 class="h5 mb-3">List group item heading</h2>
+                                <small class="text-muted">3d</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start py-3 rounded-0 rounded-bottom">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h2 class="h5 mb-3">List group item heading</h2>
+                                <small class="text-muted">10d</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-around">
+                <div class="col-lg-3 col-md-4 my-5 my-md-0">
+                    <div class="mb-3">
+                        <span class="h6">Archives</span>
+                    </div>
+                    <ul class="list-group list-group-flush rounded border border-gray-300 shadow p-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                            <a href="#">May 2019</a>50
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                            <a href="#">April 2019</a>78
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                            <a href="#">March 2019</a>34
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                            <a href="#">February 2019</a>37
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0">
+                            <a href="#">January 2019</a>80
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-5 mt-sm-0">
+                    <div class="mb-3">
+                        <span class="h6">Tags</span>
+                    </div>
+                    <div class="wi-tags">
+                        <a href="#">dark</a>
+                        <a href="#">business</a>
+                        <a href="#">corporate</a>
+                        <a href="#">design</a>
+                        <a href="#">portfolio</a>
+                        <a href="#">responsive</a>
+                        <a href="#">clean</a>
+                        <a href="#">modern</a>
+                        <a href="#">blog</a>
+                        <a href="#">creative</a>
+                        <a href="#">video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Section -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

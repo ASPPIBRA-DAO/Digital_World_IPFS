@@ -1,0 +1,997 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Cards {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <div class="section-header pb-6 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <h1 class="display-3 mb-4">Cards</h1>
+                    <p class="lead mb-5">A <span class="fw-bold">.card</span> is a flexible content container. It includes options for headers and footers, a wide variety of content and powerful display options.</p>
+                    <div class="alert bg-secondary align-items-center" role="alert">
+                        <span class="fas fa-info-circle"></span>
+                        <a class="fw-bold text-white text-underline ms-1" href="https://themesberg.com/docs/pixel-bootstrap/components/cards/" target="_blank">See our Documentation</a> for a detailed technical explanation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Hero -->
+    
+    <!--Title section-->
+    <div class="section section-lg pb-5">
+        <div class="container">
+            <div class="row text-center mt-4">
+                <h2 class="h5">Blog Cards</h2>
+            </div>
+        </div>
+    </div>
+    <!--End of Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <img src="/static/assets/img/blog/image-1.jpg" class="card-img-top rounded-top" alt="Themesberg office">
+                        <div class="card-body">
+                            <span class="h6 icon-tertiary small"><span class="fas fa-medal me-2"></span>Awards</span>
+                            <h3 class="h5 card-title mt-3">We partnered up with Google</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <img src="/static/assets/img/blog/image-2.jpg" class="card-img-top rounded-top" alt="Designer desk">
+                        <div class="card-body">
+                            <div class="media d-flex align-items-center justify-content-between">
+                                <div class="post-group">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                                        <img class="avatar-sm me-2 img-fluid rounded-circle" src="/static/assets/img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="small"><span class="far fa-calendar-alt me-2"></span>15 March 2021</span>
+                                </div>
+                            </div> 
+                            <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow text-center">
+                        <div class="card-header bg-white border-0 pb-0">
+                            <span class="card-text small"><span class="far fa-calendar-alt me-2"></span>15 March 2021</span>
+                        </div>
+                        <div class="card-body">
+                        <h3 class="h5 card-title">We partnered up with Google</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                                <img class="avatar-sm me-2 img-fluid rounded-circle" src="/static/assets/img/team/profile-picture-2.jpg" alt="Moore avatar"> Jo J. Moore
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4">
+                                <img src="/static/assets/img/blog/image-4.jpg" class="card-img rounded-start" alt="Artist desk">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="#"><h3 class="h5 card-title">We partnered up with Google</h3></a>
+                                    <p class="card-text mb-4">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="card-text small"><span class="far fa-calendar-alt me-2"></span>15 March 2021</span>
+                                        <a href="#" class="small"><span class="far fa-comments me-2"></span>21</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body p-5">
+                            <h3 class="h4 card-title mb-3">We partnered up with Google</h3>
+                            <span class="card-text small"><span class="far fa-calendar-alt me-2"></span>15 March 2021</span>
+                            <p class="card-text mt-4">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="btn btn-tertiary btn-sm me-3">Learn More</a>
+                                <a href="#" class="small"><span class="far fa-comments me-2"></span>21</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="card shadow p-3 p-md-4">
+                        <div class="card-header border-0 bg-white p-0">
+                            <div class="post-meta">
+                                <div class="media d-flex align-items-center justify-content-between">
+                                    <div class="post-group">
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="23k followers" data-original-title="23k followers">
+                                            <img class="avatar-sm me-2 img-fluid rounded-circle" src="/static/assets/img/team/profile-picture-2.jpg" alt="Jose portrait"> posted by Jose Leos
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="btn-group">
+                                            <button class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="icon icon-sm">
+                                                    <span class="fas fa-ellipsis-h icon-secondary"></span>
+                                                </span>
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <div class="dropdown-menu py-0">
+                                                <a class="dropdown-item rounded-top" href="#"><span class="fas fa-edit me-2"></span>Edit post</a>
+                                                <a class="dropdown-item text-danger rounded-bottom" href="#"><span class="fa fa-trash me-2" aria-hidden="true"></span>Delete post</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body py-4 px-0">
+                            <a href="#">
+                                <img src="/static/assets/img/blog/image-1.jpg" class="card-img-top rounded mb-3" alt="Webdeveloper desk">
+                                <h3 class="h4">List of public corporations by market capitalization</h3>
+                            </a>
+                            <p class="card-text mb-2">All of the world's 10 largest companies as measured by market capitalization are American. Market capitalization is the total value of a company's entire purchased shares of stock. While these companies have their roots
+                                in the U.S. and are the embodiment of ... </p>
+                        </div>
+                        <div class="card-footer bg-white pb-0 px-0">
+                            <div class="d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between">
+                                <div class="post-details mb-3 mb-lg-0">
+                                    <button class="btn btn-sm btn-primary animate-hover me-2">
+                                        <span class="fas fa-arrow-up me-2 animate-up-2"></span>
+                                        4
+                                    </button>
+                                    <button class="btn btn-sm btn-danger animate-hover">
+                                        <span class="fas fa-arrow-down me-2 animate-down-2"></span>
+                                        1
+                                    </button>
+                                </div>
+                                <div class="post-meta">
+                                    <a class="text-dark me-3" href="#"><span class="far fa-comments me-2"></span>33.7k</a>
+                                    <button class="btn me-3 btn-link text-primary"><span class="fas fa-share me-2"></span>Share</button>
+                                    <button class="btn btn-secondary"><span class="far fa-save me-2"></span>Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row text-center mt-4">
+                <h2 class="h5">Profile Cards</h2>
+            </div>
+        </div>
+    </div>
+    <!--End of Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-7 mb-lg-0">
+                    <div class="card border-0 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="/static/assets/img/team/profile-picture-1.jpg" class="card-img-top" alt="Neil Portrait">
+                        </div>
+                        <div class="card-body position-relative mt-n6 mx-2 bg-white border border-gray-300 text-center rounded">
+                            <h3 class="h5 card-title">Neil D. Sims</h3>
+                            <span class="text-gray"><span class="fas fa-map-marker-alt me-2"></span>New York,
+                                USA</span>
+                            <p class="mt-3">Neil drives the technical strategy of the platform and brand.</p>
+                            <div class="btn-group">
+                                <button class="btn btn-secondary btn-icon">
+                                    <span class="me-1"><span class="far fa-user"></span></span>
+                                    Follow
+                                </button>
+                                <button class="btn btn-primary" aria-label="mesage button" title="message button">
+                                    <span aria-hidden="true" class="far fa-envelope"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-7 mb-lg-0">
+                    <div class="card shadow">
+                        <img src="/static/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-top" alt="Bonnie Portrait">
+                        <div class="card-body">
+                            <h3 class="h5 card-title mb-2">Bonnie M. Green</h3>
+                            <span class="card-subtitle text-gray fw-normal">Web publications designer</span>
+                            <p class="card-text my-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <ul class="list-unstyled d-flex mt-3 mb-0">
+                                <li>
+                                    <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook me-3">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-xs icon-twitter me-3">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack me-3">
+                                        <span class="fab fa-slack-hash"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble">
+                                        <span class="fab fa-dribbble"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card shadow text-center">
+                        <div class="profile-thumbnail mx-auto mt-n6">
+                            <img src="/static/assets/img/team/profile-picture-2.jpg" class="card-img-top rounded-circle border-0" alt="Jose Portrait">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title mb-2">Jose D. Leos</h3>
+                            <span class="card-subtitle text-gray fw-normal">Web Developer</span>
+                            <ul class="list-unstyled d-flex justify-content-center mt-3">
+                                <li>
+                                    <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook me-3">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-xs icon-twitter me-3">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack me-3">
+                                        <span class="fab fa-slack-hash"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble me-3">
+                                        <span class="fab fa-dribbble"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card text-center border-gray-300">
+                        <div class="profile-cover rounded-top" data-background="/static/assets/img/team/cover-profile.jpg"></div>
+                        <div class="profile-thumbnail small-thumbnail mt-n6 mx-auto">
+                            <img src="/static/assets/img/team/profile-picture-4.jpg" class="card-img-top rounded-circle border-white" alt="Joseph Portrait">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title mb-0">Joseph A. Garth</h3>
+                            <a class="btn btn-sm btn-secondary my-3" href="#">
+                                <span class="fas fa-user-plus me-1"></span> Follow
+                            </a>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
+                                <li>
+                                    <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook me-3">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-xs icon-twitter me-3">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack me-3">
+                                        <span class="fab fa-slack-hash"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble me-3">
+                                        <span class="fab fa-dribbble"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card text-center border-gray-300">
+                        <img class="profile-thumbnail small-thumbnail rounded mx-auto mt-4" src="/static/assets/img/team/profile-picture-1.jpg" alt="Christopher Portrait">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Christopher Wood</h3>
+                            <ul class="list-unstyled d-flex justify-content-center mt-3">
+                                <li>
+                                    <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook me-3">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-xs icon-twitter me-3">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack me-3">
+                                        <span class="fab fa-slack-hash"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble me-3">
+                                        <span class="fab fa-dribbble"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0 p-0">
+                            <div class="d-grid">
+                                <a class="btn btn-primary rounded-0 rounded-bottom" href="#">
+                                    <span class="far fa-envelope me-2"></span> Send a Message
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="rotating-card">
+                        <div class="card shadow card-rotate p-5">
+                            <div class="front text-center">
+                                <div class="profile-thumbnail small-thumbnail mx-auto mt-4">
+                                    <img src="/static/assets/img/team/profile-picture-2.jpg" class="card-img-top rounded-circle border-primary" alt="Frank Portrait">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h4 card-title">Frank Shears</h3>
+                                </div>
+                            </div>
+                            <div class="back text-center">
+                                <div class="card-body p-5">
+                                    <span class="h6 card-subtitle">UI/UX Designer</span>
+                                    <ul class="list-unstyled d-flex justify-content-center mt-3">
+                                        <li>
+                                            <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook me-3">
+                                                <span class="fab fa-facebook-f"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-xs icon-twitter me-3">
+                                                <span class="fab fa-twitter"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack me-3">
+                                                <span class="fab fa-slack-hash"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble me-3">
+                                                <span class="fab fa-dribbble"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="btn btn-sm btn-secondary" href="#">
+                                        <span class="fas fa-user-plus me-1"></span> Follow
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 text-center">
+                        <div class="profile-thumbnail mx-auto">
+                            <img src="/static/assets/img/team/profile-picture-2.jpg" class="card-img-top rounded-circle shadow border-0" alt="Benjamin Portrait">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title mb-2">Benjamin West</h3>
+                            <span class="card-subtitle text-gray fw-normal">Web Developer</span>
+                            <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
+                                <li>
+                                    <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook me-3">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-xs icon-twitter me-3">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack me-3">
+                                        <span class="fab fa-slack-hash"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble me-3">
+                                        <span class="fab fa-dribbble"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 text-center">
+                        <div class="card-header border-0 bg-white">
+                            <img src="/static/assets/img/team/profile-picture-2.jpg" class="card-img-top rounded shadow border-0" alt="James Portrait">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-subtitle text-gray fw-normal">Web Developer</span>
+                            <h3 class="h4 card-title mt-2">James Desai</h3>
+                            <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
+                                <li>
+                                    <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook me-3">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-xs icon-twitter me-3">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack me-3">
+                                        <span class="fab fa-slack-hash"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble me-3">
+                                        <span class="fab fa-dribbble"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row text-center mt-4">
+                <h2 class="h5">Dashboard Cards</h2>
+            </div>
+        </div>
+    </div>
+    <!--End of Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body d-flex flex-row align-items-center flex-0 border-bottom">
+                            <div class="d-block">
+                                <div class="h6 fw-normal text-gray mb-2">New customers</div>
+                                <h2 class="h3">452</h2>
+                                <div class="small mt-2">                               
+                                    <span class="fas fa-angle-up text-success"></span>                                   
+                                    <span class="text-success fw-bold">18.2%</span>
+                                </div>
+                            </div>
+                            <div class="d-block ms-auto">
+                                <div class="d-flex align-items-center text-right mb-2">
+                                    <span class="shape-xs rounded-circle bg-dark me-2"></span>
+                                    <span class="fw-normal small">Last month</span>
+                                </div>
+                                <div class="d-flex align-items-center text-right">
+                                    <span class="shape-xs rounded-circle bg-tertiary me-2"></span>
+                                    <span class="fw-normal small">This month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="ct-chart-5 ct-golden-section ct-series-e"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body d-flex flex-row align-items-center flex-0 border-bottom">
+                            <div class="d-block">
+                                <div class="h6 fw-normal text-gray mb-2">Revenues</div>
+                                <h2 class="h3">10,567</h2>
+                                <div class="small mt-2">                               
+                                    <span class="fas fa-angle-up text-success"></span>                                   
+                                    <span class="text-success fw-bold">$10.57%</span>
+                                </div>
+                            </div>
+                            <div class="d-block ms-auto">
+                                <div class="d-flex align-items-center text-right mb-2">
+                                    <span class="shape-xs rounded-circle bg-dark me-2"></span>
+                                    <span class="fw-normal small">Real Estate</span>
+                                </div>
+                                <div class="d-flex align-items-center text-right mb-2">
+                                    <span class="shape-xs rounded-circle bg-tertiary me-2"></span>
+                                    <span class="fw-normal small">Electronic</span>
+                                </div>
+                                <div class="d-flex align-items-center text-right mb-2">
+                                    <span class="shape-xs rounded-circle bg-primary me-2"></span>
+                                    <span class="fw-normal small">Clothes</span>
+                                </div>
+                                <div class="d-flex align-items-center text-right">
+                                    <span class="shape-xs rounded-circle bg-success me-2"></span>
+                                    <span class="fw-normal small">Auto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="ct-chart-7 ct-golden-section ct-series-e"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body d-flex flex-row align-items-center flex-0 border-bottom">
+                            <div class="d-block">
+                                <div class="h6 fw-normal text-gray mb-2">Sales Value</div>
+                                <h2 class="h3">10,567</h2>
+                                <div class="small mt-2">                               
+                                    <span class="fas fa-angle-up text-success"></span>                                   
+                                    <span class="text-success fw-bold">$10.57%</span>
+                                </div>
+                            </div>
+                            <div class="d-flex ms-auto">
+                                <a href="#" class="btn btn-tertiary btn-sm me-3">Month</a>
+                                <a href="#" class="btn btn-white btn-sm me-3">Week</a>
+                            </div>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="ct-chart-8 ct-major-tenth ct-series-b"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row text-center mt-4">
+                <h2 class="h5">Pricing Cards</h2>
+            </div>
+        </div>
+    </div>
+    <!--End of Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow text-center">
+                        <!-- Header -->
+                        <div class="card-header bg-white p-3">
+                            <h3 class="text-primary mb-4">Basic</h3>
+                            <span class="d-block">
+                                <span class="display-1 text-dark fw-bold">
+                                    <span class="align-top font-medium">$</span>19
+                            </span>
+                            <span class="d-block text-gray font-small">/ month</span>
+                            </span>
+                        </div>
+                        <!-- End Header -->
+                        <!-- Content -->
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-4">
+                                <li class="list-item pb-3"><strong>1</strong> free domain</li>
+                                <li class="list-item pb-3">Storage space: <strong>5GB</strong></li>
+                                <li class="list-item pb-3"><strong>100k</strong> monthly visitors</li>
+                                <li class="list-item pb-3">One-click staging site</li>
+                                <li class="list-item pb-3">Search engine wizard </li>
+                                <li class="list-item pb-3">Community support</li>
+                            </ul>
+                            <div class="d-grid"><a href="#" class="btn btn-primary animate-up-1">Start Starter</a></div>
+                        </div>
+                        <!-- End Content -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card shadow p-4">
+                        <!-- Header -->
+                        <div class="card-header border-bottom bg-white text-center">
+                            <span class="d-block">
+                                <span class="display-1 text-primary fw-bold">
+                                <span class="align-top font-medium">$</span>19
+                            </span>
+                            <span class="text-gray font-small">/ month</span>
+                            </span>
+                        </div>
+                        <!-- End Header -->
+                        <!-- Content -->
+                        <div class="card-body">
+                            <p>Faster sites deliver better business results for your clients.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="list-item pb-2"><strong>Full Support</strong> No</li>
+                                <li class="list-item pb-2"><strong>Storage</strong> 50 GB</li>
+                                <li class="list-item"><strong>Monthly Visitors</strong> 400k</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-outline-primary animate-up-1"><span class="fas fa-cart-plus me-3"></span>Add to Cart</a>
+                            </div> 
+                            </button>
+                        </div>
+                        <!-- End Content -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card bg-secondary border-gray-300">
+                        <!-- Header -->
+                        <div class="card-header bg-primary text-white border-primary p-4">
+                            <span class="icon mb-4"><span class="far fa-star"></span></span>
+                            <span class="d-block">
+                                <span class="display-1 fw-bold">
+                                    19<span class="align-baseline font-medium">$</span>
+                            </span>
+                            <span class="font-small">/ month</span>
+                            </span>
+                        </div>
+                        <!-- End Header -->
+                        <!-- Content -->
+                        <div class="card-body text-white p-4">
+                            <ul class="list-group list-group-flush price-list mb-4">
+                                <li class="list-group-item bg-secondary border-primary text-white"><span class="far fa-lightbulb"></span>Community support</li>
+                                <li class="list-group-item bg-secondary border-primary text-white"><span class="far fa-hdd"></span>15 GB SSD storage</li>
+                                <li class="list-group-item bg-secondary border-primary text-white"><span class="far fa-paper-plane"></span>One-click staging site</li>
+                                <li class="list-group-item bg-secondary border-primary text-white"><span class="far fa-envelope"></span>10 E-mail accounts</li>
+                                <li class="list-group-item bg-secondary border-0 text-white"><span class="far fa-id-badge"></span>2 Bootstrap Themes</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-white animate-up-1">Add to Cart</a>
+                            </div> 
+                        </div>
+                        <!-- End Content -->
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                    <div class="card shadow">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-sm-5">
+                                <!-- Header -->
+                                <div class="card-header border-0 bg-white text-center pb-0">
+                                    <h3 class="text-primary mb-0">Basic</h3>
+                                    <span class="d-block my-3">
+                                        <span class="display-2 fw-bold"><span class="align-baseline font-medium">$</span>19
+                                    </span>
+                                    </span>
+                                    <div class="d-grid">
+                                        <a href="#" class="btn btn-sm btn-outline-primary animate-up-1">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <!-- Content -->
+                                <div class="card-body pb-0">
+                                    <ul class="list-group list-group-flush price-list mb-4">
+                                        <li class="list-group-item border-0"><span class="far fa-lightbulb"></span>Community support</li>
+                                        <li class="list-group-item border-0"><span class="far fa-hdd"></span>15 GB SSD storage</li>
+                                        <li class="list-group-item border-0"><span class="far fa-paper-plane"></span>One-click staging site</li>
+                                        <li class="list-group-item border-0"><span class="far fa-envelope"></span>10 E-mail accounts</li>
+                                        <li class="list-group-item border-0"><span class="far fa-id-badge"></span>2 Bootstrap Themes</li>
+                                    </ul>
+                                </div>
+                                <!-- End Content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="card shadow p-0">
+                        <!-- Header -->
+                        <div class="card-header bg-white">
+                            <h4 class="text-secondary mb-3">Regular</h4>
+                            <span class="d-block">
+                                <span class="display-1 text-secondary fw-bold">
+                                    <span class="align-top font-medium">$</span>39
+                            </span>
+                            <span class="font-small">/ month</span>
+                            </span>
+                        </div>
+                        <!-- End Header -->
+                        <!-- Content -->
+                        <div class="card-body p-3">
+                            <p class="p-3">So, get Website Backup and stop worrying about data loss. Get back to doing what you do best – running your business and making money.</p>
+                        </div>
+                        <!-- End Content -->
+                        <div class="card-footer bg-white border-0 p-0">
+                            <div class="d-grid">
+                                <a href="#" class="btn btn-primary rounded-0 rounded-bottom">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row text-center mt-4">
+                <h2 class="h5">Call to Action</h2>
+            </div>
+        </div>
+    </div>
+    <!--End of Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="card shadow mb-6">
+                        <div class="card-body px-5 py-5 text-center text-md-left">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <h2 class="mb-3">Get in touch</h2>
+                                    <p class="mb-0">
+                                        If you need any help with our products or services, choose one of the following ways to contact us.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                                    <a href="#" class="btn btn-primary">
+                                        <span class="me-1">
+                                            <span class="fas fa-headphones"></span>
+                                        </span>
+                                        Contact Us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10">
+                    <div class="card shadow px-4 py-1 mb-6">
+                        <div class="card-body text-center text-md-left">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <h2 class="mb-3">Become one of us</h2>
+                                    <p class="mb-4">
+                                        Do you want to join our team and work remotely from anywhere you'd like? We can’t wait to hear from you!
+                                    </p>
+                                    <a href="#" class="btn btn-primary">
+                                        <span class="me-1">
+                                            <span class="fas fa-file-invoice"></span>
+                                        </span>
+                                        Check Careers
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                                    <img src="/static/assets/img/illustrations/reading-side.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card shadow px-4 py-5 text-center mb-5">
+                        <div class="card-header bg-white border-0 pb-0">
+                            <h2 class="h1 mb-3">Ready to change your life?</h2>
+                        </div>
+                        <div class="card-body pt-2 px-0 px-lg-10">
+                            <p class="mb-5 lead">
+                                Download Rocket today and take the first step to organize your routine, achieve your personal goals and reflect on your life.
+                            </p>
+                            <a class="btn btn-lg btn-primary text-white me-md-3 mb-3 mb-sm-0 animate-up-1" href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon icon-lg me-3"><span class="fab fa-apple"></span></span>
+                                    <div class="d-block">
+                                        <small class="font-small">Download on the</small>
+                                        <div class="h5 mb-0">App Store</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="btn btn-lg btn-primary text-white animate-up-1" href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon icon-lg me-3"><span class="fab fa-google-play"></span></span>
+                                    <div class="d-block">
+                                        <small class="font-small">Download on the</small>
+                                        <div class="h5 mb-0">Google Play</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card shadow px-4 py-5">
+                        <div class="card-header bg-white border-0 pb-0 text-center">
+                            <h2 class="h1 mb-3">Get the most out of your network.</h2>
+                            <p class="mb-5 lead">
+                                Contact management designed for teams and individuals
+                            </p>
+                        </div>
+                        <div class="card-body pt-2 px-0 px-lg-7">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-8">
+                                    <!-- Form -->
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="email" class="form-control form-control-lg rounded-start" placeholder="example@themesberg.com" required>
+                                            <button class="btn btn-tertiary" type="button"><span class="icon icon-xs me-1"><span class="fas fa-search"></span></span>Submit</button>
+                                        </div>
+                                    </div>
+                                    <!-- End of Form -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row text-center mt-4">
+                <h2 class="h5">Login & Register</h2>
+            </div>
+        </div>
+    </div>
+    <!--End of Title section-->
+    <div class="section section-lg pt-0">
+        <div class="container">
+            <div class="row justify-content-md-around">
+                <div class="col-12 col-6 col-xl-5 mb-5 mb-xl-0">
+                    <div class="card shadow p-4">
+                        <div class="card-header border-0 bg-white text-center pb-0">
+                            <h2 class="h4">Sign in to our platform</h2>
+                            <span>Login here using your username and password</span>   
+                        </div>
+                        <div class="card-body p-0 p-lg-4">
+                            <form action="#" class="mt-4">
+                                <!-- Form -->
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputEmailCard1">Your Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1"><span class="fas fa-envelope"></span></span>
+                                        <input type="email" class="form-control" placeholder="example@company.com" id="exampleInputEmailCard1" aria-describedby="exampleInputEmailCard1">
+                                    </div>  
+                                </div>
+                                <!-- End of Form -->
+                                <div class="form-group">
+                                    <!-- Form -->
+                                    <div class="form-group mb-4">
+                                        <label for="exampleInputPasswordCard1">Your Password</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon2"><span class="fas fa-unlock-alt"></span></span>
+                                            <input type="password" placeholder="Password" class="form-control" id="exampleInputPasswordCard1" aria-describedby="exampleInputPasswordCard1">
+                                        </div>  
+                                    </div>
+                                    <!-- End of Form -->
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                            <label class="form-check-label mb-0" for="defaultCheck5">
+                                            Remember me
+                                            </label>
+                                        </div>
+                                        <div><a href="#" class="small text-right">Lost password?</a></div>
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+                            </form>
+                            <div class="mt-3 mb-4 text-center">
+                                <span class="fw-normal">or login with</span>
+                            </div>
+                            <div class="btn-wrapper my-4 text-center">
+                                <button class="btn btn-icon-only btn-pill btn-outline-light text-facebook me-2" type="button" aria-label="facebook button" title="facebook button">
+                                    <span aria-hidden="true" class="fab fa-facebook-f"></span>
+                                </button>
+                                <button class="btn btn-icon-only btn-pill btn-outline-light text-twitter me-2" type="button" aria-label="twitter button" title="twitter button">
+                                    <span aria-hidden="true" class="fab fa-twitter"></span>
+                                </button>
+                                <button class="btn btn-icon-only btn-pill btn-outline-light text-facebook" type="button" aria-label="github button" title="github button">
+                                    <span aria-hidden="true" class="fab fa-github"></span>
+                                </button>
+                            </div>
+                            <div class="d-block d-sm-flex justify-content-center align-items-center mt-4">
+                                <span class="fw-normal">
+                                    Not registered?
+                                    <a href="#" class="fw-bold">Create account</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-6 col-xl-5 mb-5 mb-lg-0">
+                    <div class="card shadow p-4">
+                        <div class="card-header border-0 bg-white text-center pb-0">
+                            <h2 class="mb-0 h5">Create Account</h2>                               
+                        </div>
+                        <div class="card-body p-0 p-lg-4">
+                            <form action="#">
+                                <!-- Form -->
+                                <div class="form-group mb-4">
+                                    <label for="exampleInputEmailCard3">Your Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon3"><span class="fas fa-envelope"></span></span>
+                                        <input type="email" class="form-control" placeholder="example@company.com" id="exampleInputEmailCard3" aria-describedby="exampleInputEmailCard3">
+                                    </div>  
+                                </div>
+                                <!-- End of Form -->
+                                <div class="form-group">
+                                    <!-- Form -->
+                                    <div class="form-group mb-4">
+                                        <label for="exampleInputPasswordCard4">Your Password</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon4"><span class="fas fa-unlock-alt"></span></span>
+                                            <input type="password" placeholder="Password" class="form-control" id="exampleInputPasswordCard4" aria-describedby="exampleInputPasswordCard4">
+                                        </div>  
+                                    </div>
+                                    <!-- End of Form -->
+                                    <!-- Form -->
+                                    <div class="form-group mb-4">
+                                        <label for="exampleInputPasswordCard5">Confirm Password</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon5"><span class="fas fa-unlock-alt"></span></span>
+                                            <input type="password" placeholder="Confirm Password" class="form-control" id="exampleInputPasswordCard5" aria-describedby="exampleInputPasswordCard5">
+                                        </div>  
+                                    </div>
+                                    <!-- End of Form -->
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                        <label class="form-check-label" for="defaultCheck6">
+                                            I agree to the <a href="#">terms and conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Sign up</button>
+                                </div>
+                            </form>
+                            <div class="mt-3 mb-4 text-center">
+                                <span class="fw-normal">or</span>
+                            </div>
+                            <div class="btn-wrapper my-4 text-center">
+                                <button class="btn btn-icon-only btn-pill btn-outline-light text-facebook me-2" type="button" aria-label="facebook button" title="facebook button">
+                                    <span aria-hidden="true" class="fab fa-facebook-f"></span>
+                                </button>
+                                <button class="btn btn-icon-only btn-pill btn-outline-light text-twitter me-2" type="button" aria-label="twitter button" title="twitter button">
+                                    <span aria-hidden="true" class="fab fa-twitter"></span>
+                                </button>
+                                <button class="btn btn-icon-only btn-pill btn-outline-light text-facebook" type="button" aria-label="github button" title="github button">
+                                    <span aria-hidden="true" class="fab fa-github"></span>
+                                </button>
+                            </div>
+                            <div class="d-block d-sm-flex justify-content-center align-items-center mt-4">
+                                <span class="fw-normal">
+                                    Already have an account?
+                                    <a href="#" class="fw-bold">Login here</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

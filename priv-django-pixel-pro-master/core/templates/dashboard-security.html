@@ -1,0 +1,248 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard Security {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block nav_style %} navbar-light navbar-transparent navbar-theme-secondary {% endblock nav_style %}
+
+{% block content %}
+
+    <div class="section section-lg pt-5 pt-md-7 bg-gray-200">
+        <div class="container">
+            <div class="row pt-5 pt-md-0">
+                
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <!-- Navigation -->
+                    <div class="card border-gray-300 p-2">
+                        <div class="card-header bg-white border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
+                            <div class="profile-thumbnail dashboard-avatar mx-lg-auto me-3">
+                                <img src="/static/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bonnie Green Portrait">
+                            </div>
+                            <span class="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, Bonnie!</span>
+                            <a href="#" class="btn btn-gray-300 btn-xs"><span class="me-2"><span class="fas fa-sign-out-alt"></span></span>Sign Out</a>
+                        </div>
+                        <div class="card-body p-2 d-none d-lg-block">
+                            <div class="list-group dashboard-menu list-group-sm">
+                                <a href="/dashboard-account.html" class="d-flex list-group-item border-0 list-group-item-action ">Overview <span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-settings.html" class="d-flex list-group-item border-0 list-group-item-action ">Settings<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-my-items.html" class="d-flex list-group-item border-0 list-group-item-action ">My Items<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-security.html" class="d-flex list-group-item border-0 list-group-item-action  active ">Security<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-billing.html" class="d-flex list-group-item border-0 list-group-item-action ">Billing<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-messages.html" class="d-flex list-group-item border-0 list-group-item-action  border-0">Messages<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <div class="card bg-white border-gray-300 mb-4 mb-lg-5">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-10 d-flex">
+                                    <a href="/dashboard-account.html" class="list-group-item list-group-item-action border-0 text-center me-2 ">Overview</a>
+                                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action border-0 text-center me-2 ">Settings</a>
+                                    <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action border-0 text-center me-2 d-none d-sm-block border-0 ">My Items</a>
+                                    <a href="/dashboard-security.html" class="list-group-item list-group-item-action border-0 text-center d-none d-md-block border-0  active ">Security</a>
+                                </div>
+                                <div class="col-2 d-flex justify-content-center">
+                                    <div class="btn-group dropleft">
+                                        <button class="btn btn-link dropdown-toggle dropdown-toggle-split me-2 m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon icon-sm">
+                                                <span class="fas fa-ellipsis-h icon-secondary fa-lg"></span>
+                                            </span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action d-sm-none border-0 ">My Items</a>
+                                            <a href="/dashboard-security.html" class="list-group-item list-group-item-action d-md-none border-0  active ">Security</a>
+                                            <a href="/dashboard-billing.html" class="list-group-item list-group-item-action border-0 ">Billing</a>
+                                            <a href="/dashboard-messages.html" class="list-group-item list-group-item-action border-0 ">Messages</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="card p-0 p-md-4 mb-4">
+                        <div class="card-header bg-white border-0">
+                            <h3 class="h5 mb-0">Two Factor Authentication</h3>
+                            <p class="text-sm mb-0">Keep your account secure by enabling two-factor authentication.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item border-0 py-3">
+                                <div class="row mx-n2">
+                                    <div class="col-12 col-lg-4 px-2 mb-3 mb-lg-0">
+                                    <select class="form-select" id="inlineFormCustomSelectSecurity" aria-label="Security select example">
+                                        <option>Google Auth</option>
+                                        <option>SMS Code</option>
+                                        <option>Backup Code</option>
+                                    </select>
+                                    </div>
+                                    <div class="col col-lg px-2">
+                                    <div class="form-group"><input type="text" class="form-control" placeholder="Description"></div>
+                                    </div>
+                                    <div class="col-auto px-2">
+                                    <button type="button" class="btn btn-secondary px-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item border-bottom rounded-0 py-3">
+                                <div class="row align-items-center">
+                                    <div class="col-auto"><span class="icon icon-md"><span class="fab fa-google"></span></span></div>
+                                    <div class="col ms-n2">
+                                    <h6 class="text-sm mb-0">Google Auth</h6>
+                                    <p class="card-text small text-muted">iPhone</p>
+                                    </div>
+                                    <div class="col-md d-none d-md-block"><span class="text-muted">Added:</span> 2021-03-12 01:14:22</div>
+                                    <div class="col-auto">
+                                    <div class="btn-group">
+                                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon icon-sm">
+                                                <span class="fas fa-ellipsis-v icon-dark"></span>
+                                            </span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu py-0">
+                                            <a class="dropdown-item rounded-top" href="#"><span class="fas fa-edit me-2"></span>Edit post</a>
+                                            <a class="dropdown-item text-danger rounded-bottom" href="#"><span class="fa fa-trash me-2" aria-hidden="true"></span>Disable</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-3">
+                                <div class="row align-items-center">
+                                    <div class="col-auto"><span class="icon icon-md"><span class="fas fa-sms"></span></span></div>
+                                    <div class="col ms-n2">
+                                    <h6 class="text-sm mb-0">SMS Code</h6>
+                                    </div>
+                                    <div class="col d-none d-md-block"><span class="text-muted">Added:</span> 2021-02-12 14:34:12</div>
+                                    <div class="col-auto">
+                                    <div class="btn-group">
+                                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon icon-sm">
+                                                <span class="fas fa-ellipsis-v icon-dark"></span>
+                                            </span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu py-0">
+                                            <a class="dropdown-item rounded-top" href="#"><span class="fas fa-edit me-2"></span>Edit post</a>
+                                            <a class="dropdown-item text-danger rounded-bottom" href="#"><span class="fa fa-trash me-2" aria-hidden="true"></span>Disable</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card border-gray-300 p-0 p-md-4 mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 mb-0">Change Password</h3>
+                            <form class="form mt-5" autocomplete="off">
+                                <div class="mb-4">
+                                    <label for="inputPasswordOld">Current Password</label>
+                                    <input type="password" class="form-control" id="inputPasswordOld" required="">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="inputPasswordNew">New Password</label>
+                                    <input type="password" class="form-control" id="inputPasswordNew" required="">
+                                    <span class="form-text small text-muted">
+                                            The password must be 8-20 characters, and must <em>not</em> contain spaces.
+                                        </span>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="inputPasswordNewVerify">Verify</label>
+                                    <input type="password" class="form-control" id="inputPasswordNewVerify" required="">
+                                    <span class="form-text small text-muted">
+                                            To confirm, type the new password again.
+                                        </span>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-dark">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card card-body bg-white border-gray-300 p-0 p-md-4">
+                        <div class="card-header bg-white border-0">
+                            <div class="row d-block d-md-flex align-items-center">
+                                <div class="col">
+                                    <h3 class="h5">Your Sessions</h3>
+                                    <p class="small">This is a list of devices that have logged into your account. <br>Revoke any sessions that you do not recognize.</p>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="btn btn-sm btn-dark" href="#">
+                                        Log out all
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-md-0">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item border-bottom rounded-0 py-4">
+                                    <div class="row d-block d-md-flex align-items-center">
+                                        <div class="col-auto">
+                                            <div class="icon icon-lg me-md-5 fw-50">
+                                                <span class="fas fa-mobile-alt"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col ms-md-n5 my-4 my-md-0">
+                                            <h3 class="h6 mb-1">
+                                                iPhone X
+                                            </h3>
+                                            <div class="small">
+                                            New York, USA
+                                            </div>
+                                            <span class="small"><span class="text-dark fw-bold">Last accessed:</span> March 10 at 6:06PM</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="btn btn-xs btn-outline-gray">
+                                            Log out
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item py-4">
+                                    <div class="row d-block d-md-flex align-items-center">
+                                        <div class="col-auto">
+                                            <div class="icon icon-lg me-md-5 fw-50">
+                                                <span class="fas fa-laptop"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col ms-md-n5 my-4 my-md-0">
+                                            <h3 class="h6 mb-1">
+                                                Chrome on Macintosh
+                                            </h3>
+                                            <div class="small">
+                                                New York, USA
+                                            </div>
+                                            <span class="small"><span class="text-dark fw-bold">Last accessed:</span> March 11 at 4:26PM</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="btn btn-xs btn-outline-gray">
+                                            Log out
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

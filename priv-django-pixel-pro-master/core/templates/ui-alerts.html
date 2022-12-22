@@ -1,0 +1,184 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Alerts {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <div class="section-header pb-6 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <h1 class="display-3 mb-4">Alerts</h1>
+                    <p class="lead mb-5">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+                    <div class="alert bg-secondary align-items-center" role="alert">
+                        <span class="fas fa-info-circle"></span>
+                        <a class="fw-bold text-white text-underline ms-1" href="https://themesberg.com/docs/pixel-bootstrap/components/alerts/" target="_blank">See our Documentation</a> for a detailed technical explanation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Hero -->
+    
+    <!--Title section-->
+    <div class="section section-lg pb-0">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="h5">Default Alerts</h2>
+            </div>
+        </div>
+    </div>
+    <!--End of Title section-->
+    <!-- Section -->
+    <div class="section section-md">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                    </div>
+                    <div class="alert alert-tertiary" role="alert">
+                        A simple tertiary alert—check it out!
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        A simple warning alert—check it out!
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        A simple info alert—check it out!
+                    </div>
+                    <div class="alert alert-light" role="alert">
+                        A simple light alert—check it out!
+                    </div>
+                    <div class="alert alert-dark" role="alert">
+                        A simple dark alert—check it out!
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Section -->
+    <!--Title section-->
+    <div class="section section-lg py-0">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="h5">Dismissible Alerts with Icons</h2>
+            </div>
+        </div>
+    </div>
+    <!--End of Title section-->
+    <div class="section section-md">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                        <span class="fas fa-bullhorn me-1"></span>
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-tertiary alert-dismissible fade show" role="alert">
+                        <span class="fas fa-bullhorn me-1"></span>
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <span class="fas fa-bullhorn me-1"></span>
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <span class="fas fa-bullhorn me-1"></span>
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        <span class="fas fa-bullhorn me-1"></span>
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <span class="fas fa-bullhorn me-1"></span>
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Title section-->
+    <div class="section section-lg py-0">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="h5">Alerts with additional content</h2>
+            </div>
+        </div>
+    </div>
+    <!--End of Title section-->
+    <div class="section section-md">
+        <div class="container">
+            <!-- End of Title -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="alert alert-tertiary" role="alert">
+                        <div class="alert-icon">
+                            <span class="fas fa-bell"></span>
+                        </div>
+                        <h4 class="alert-heading">Light!</h4>
+                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                        <hr>
+                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        <div class="alert-icon">
+                            <span class="fas fa-bell"></span>
+                        </div>
+                        <h4 class="alert-heading">Well done!</h4>
+                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                        <hr>
+                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        <div class="alert-icon">
+                            <span class="fas fa-bell"></span>
+                        </div>
+                        <h4 class="alert-heading">Heads up!</h4>
+                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                        <hr>
+                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        <div class="alert-icon">
+                            <span class="fas fa-bell"></span>
+                        </div>
+                        <h4 class="alert-heading">Warning!</h4>
+                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                        <hr>
+                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        <div class="alert-icon">
+                            <span class="fas fa-bell"></span>
+                        </div>
+                        <h4 class="alert-heading">Danger!</h4>
+                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                        <hr>
+                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

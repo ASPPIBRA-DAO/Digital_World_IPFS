@@ -1,0 +1,68 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Coming Soon {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <section class="section section-header pb-6 bg-primary text-white overflow-hidden z-2">
+        <div class="container z-2">
+            <div class="row justify-content-center mb-2">
+                <div class="col-lg-8 col-xl-8">
+                    <div class="text-center">
+                        <h1 class="display-2 mb-3">We're coming soon.</h1>
+                        <p class="lead text-muted">Our website is <span class="text-italic">under construction</span>. <br>
+                        <strong>Subscribe</strong> to be one of the first to use our product.</p>
+                    </div>
+                    <form class="row d-flex align-items-top justify-content-center mt-5">
+                        <div class="col-12 col-xl-10">
+                            <div class="form-group">
+                                <label class="h6" for="email">Email address</label>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <input class="form-control form-control-lg border-0 rounded" id="email" placeholder="name@compeny.com" type="email" required>
+                                    <button type="submit" class="btn btn-tertiary btn-lg ms-2">Subscribe</button>
+                                </div>
+                            </div>
+                            <p class="small text-left text-muted mt-2">No spam. Pinky swear!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section section-md">
+        <div class="container">
+            <ul class="nav justify-content-center mb-4">
+                <li class="nav-item">
+                    <a class="nav-link text-instagram h3 px-4" aria-label="instagram social link" href="#"><span class="fab fa-instagram"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-facebook  h3 px-4" aria-label="facebook social link" href="#"><span class="fab fa-facebook"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-github h3 px-4" aria-label="github social link" href="#"><span class="fab fa-github"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dribbble h3 px-4" aria-label="dribbble social link" href="#"><span class="fab fa-dribbble"></span></a>
+                </li>
+            </ul>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 text-center">
+                    <p class="h3 fw-normal lh-160">Pixel Website UI Kit is a unique and beautiful collection of UI elements. So what are you waiting for ?</p>
+                    <div class="mt-5">
+                        <a href="https://themesberg.com/product/ui-kit/pixel-pro-premium-bootstrap-5-ui-kit" class="btn btn-secondary animate-up-1">
+                            Purchase now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

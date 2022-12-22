@@ -1,0 +1,234 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard Settings {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block nav_style %} navbar-light navbar-transparent navbar-theme-secondary {% endblock nav_style %}
+
+{% block content %}
+
+    <div class="section section-lg pt-5 pt-md-7 bg-gray-200">
+        <div class="container">
+            <div class="row pt-5 pt-md-0">
+            
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <!-- Navigation -->
+                    <div class="card border-gray-300 p-2">
+                        <div class="card-header bg-white border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
+                            <div class="profile-thumbnail dashboard-avatar mx-lg-auto me-3">
+                                <img src="/static/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bonnie Green Portrait">
+                            </div>
+                            <span class="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, Bonnie!</span>
+                            <a href="#" class="btn btn-gray-300 btn-xs"><span class="me-2"><span class="fas fa-sign-out-alt"></span></span>Sign Out</a>
+                        </div>
+                        <div class="card-body p-2 d-none d-lg-block">
+                            <div class="list-group dashboard-menu list-group-sm">
+                                <a href="/dashboard-account.html" class="d-flex list-group-item border-0 list-group-item-action ">Overview <span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-settings.html" class="d-flex list-group-item border-0 list-group-item-action  active ">Settings<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-my-items.html" class="d-flex list-group-item border-0 list-group-item-action ">My Items<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-security.html" class="d-flex list-group-item border-0 list-group-item-action ">Security<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-billing.html" class="d-flex list-group-item border-0 list-group-item-action ">Billing<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-messages.html" class="d-flex list-group-item border-0 list-group-item-action  border-0">Messages<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <div class="card bg-white border-gray-300 mb-4 mb-lg-5">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-10 d-flex">
+                                    <a href="/dashboard-account.html" class="list-group-item list-group-item-action border-0 text-center me-2 ">Overview</a>
+                                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action border-0 text-center me-2  active ">Settings</a>
+                                    <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action border-0 text-center me-2 d-none d-sm-block border-0 ">My Items</a>
+                                    <a href="/dashboard-security.html" class="list-group-item list-group-item-action border-0 text-center d-none d-md-block border-0 ">Security</a>
+                                </div>
+                                <div class="col-2 d-flex justify-content-center">
+                                    <div class="btn-group dropleft">
+                                        <button class="btn btn-link dropdown-toggle dropdown-toggle-split me-2 m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon icon-sm">
+                                                <span class="fas fa-ellipsis-h icon-secondary fa-lg"></span>
+                                            </span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action d-sm-none border-0 ">My Items</a>
+                                            <a href="/dashboard-security.html" class="list-group-item list-group-item-action d-md-none border-0 ">Security</a>
+                                            <a href="/dashboard-billing.html" class="list-group-item list-group-item-action border-0 ">Billing</a>
+                                            <a href="/dashboard-messages.html" class="list-group-item list-group-item-action border-0 ">Messages</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card card-body bg-white border-gray-300 mb-4">
+                                <h2 class="h5 mb-4">General information</h2>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="mb-3">
+                                                <label for="first_name">First Name</label>
+                                                <input class="form-control" id="first_name" type="text" placeholder="Enter your first name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="mb-3">
+                                                <label for="last_name">Last Name</label>
+                                                <input class="form-control" id="last_name" type="text" placeholder="Also your last name" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="mb-3">
+                                                <label for="birthday">Birthday</label>
+                                                <input type="text" class="form-control flatpickr-input" id="birthday" data-toggle="date" placeholder="Select your birth date">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="gender">Gender</label>
+                                            <select class="form-select" id="gender" aria-label="Default select example">
+                                                <option>Female</option>
+                                                <option>Male</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="mb-3">
+                                                <label for="email">Email</label>
+                                                <input class="form-control" id="email" type="email" placeholder="name@company.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="mb-3">
+                                                <label for="phone">Phone</label>
+                                                <input class="form-control" id="phone" type="number" placeholder="+12-345 678 910">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="h5 my-4">Location</h2>
+                                    <div class="row">
+                                        <div class="col-sm-9 mb-3">
+                                            <div class="mb-3">
+                                                <label for="address">Address</label>
+                                                <input class="form-control" id="address" type="text" placeholder="Enter your home address">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 mb-3">
+                                            <div class="mb-3">
+                                                <label for="number">Number</label>
+                                                <input class="form-control" id="number" type="number" placeholder="No.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4 mb-3">
+                                            <div class="mb-3">
+                                                <label for="city">City</label>
+                                                <input class="form-control" id="city" type="text" placeholder="City">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 mb-3">
+                                            <label for="country2">Country</label>
+                                            <select class="form-select" id="country2" aria-label="Default select example">
+                                                <option>United States</option>
+                                                <option>Germany</option>
+                                                <option>France</option>
+                                                <option>Spain</option>
+                                                <option>Italy</option>
+                                                <option>Russia</option>
+                                                <option>Japan</option>
+                                                <option>India</option>
+                                                <option>China</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="mb-3">
+                                                <label for="zip">ZIP</label>
+                                                <input class="form-control" id="zip" type="tel" placeholder="ZIP">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <button type="submit" class="btn btn-primary">Save All</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card card-body bg-white border-gray-300 mb-4">
+                                <h2 class="h5 mb-4">Select profile photo</h2>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-1 mb-2 mb-lg-0">
+                                        <!-- Avatar -->
+                                        <div class="avatar-lg">
+                                            <img class="rounded-circle" src="/static/assets/img/team/profile-picture-3.jpg" alt="change avatar">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-3 mb-lg-0">
+                                        <div class="h6 mb-0 ms-lg-3">Your avatar</div>
+                                        <small class="text-gray ms-lg-3">JPG, GIF or PNG. Max size of 800K</small>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <!-- Form -->
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Default file input example</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                        <!-- End of Form -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body bg-white border-gray-300">
+                                <h2 class="h5 mb-4">Alerts & Notifications</h2>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex align-items-center justify-content-between rounded-0 ps-0 py-3 border-bottom">
+                                        <div>
+                                            <h3 class="h6 mb-1">Company News</h3>
+                                            <span class="small">Get Spaces news, announcements, and product updates</span>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckNotifi1" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckNotifi1"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center justify-content-between rounded-0 ps-0 py-3 border-bottom">
+                                        <div>
+                                            <h3 class="h6 mb-1">Account Activity</h3>
+                                            <span class="small">Get important notifications about you or activity you've missed</span>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckNotifi2">
+                                            <label class="form-check-label" for="flexSwitchCheckNotifi2"></label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center justify-content-between ps-0 py-3">
+                                        <div>
+                                            <h3 class="h6 mb-1">Meetups Near You</h3>
+                                            <span class="small">Get an email when a Dribbble Meetup is posted close to my location</span>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckNotifi3">
+                                            <label class="form-check-label" for="flexSwitchCheckNotifi3"></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

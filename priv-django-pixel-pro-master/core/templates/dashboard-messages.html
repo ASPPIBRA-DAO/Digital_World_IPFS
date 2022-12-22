@@ -1,0 +1,328 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard Messages {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block nav_style %} navbar-light navbar-transparent navbar-theme-secondary {% endblock nav_style %}
+
+{% block content %}
+
+    <div class="section section-lg pt-5 pt-md-7 bg-gray-200">
+        <div class="container">
+            <div class="row pt-5 pt-md-0">
+            
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <!-- Navigation -->
+                    <div class="card border-gray-300 p-2">
+                        <div class="card-header bg-white border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
+                            <div class="profile-thumbnail dashboard-avatar mx-lg-auto me-3">
+                                <img src="/static/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bonnie Green Portrait">
+                            </div>
+                            <span class="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, Bonnie!</span>
+                            <a href="#" class="btn btn-gray-300 btn-xs"><span class="me-2"><span class="fas fa-sign-out-alt"></span></span>Sign Out</a>
+                        </div>
+                        <div class="card-body p-2 d-none d-lg-block">
+                            <div class="list-group dashboard-menu list-group-sm">
+                                <a href="/dashboard-account.html" class="d-flex list-group-item border-0 list-group-item-action ">Overview <span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-settings.html" class="d-flex list-group-item border-0 list-group-item-action ">Settings<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-my-items.html" class="d-flex list-group-item border-0 list-group-item-action ">My Items<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-security.html" class="d-flex list-group-item border-0 list-group-item-action ">Security<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-billing.html" class="d-flex list-group-item border-0 list-group-item-action ">Billing<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-messages.html" class="d-flex list-group-item border-0 list-group-item-action  active  border-0">Messages<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <div class="card bg-white border-gray-300 mb-4 mb-lg-5">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-10 d-flex">
+                                    <a href="/dashboard-account.html" class="list-group-item list-group-item-action border-0 text-center me-2 ">Overview</a>
+                                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action border-0 text-center me-2 ">Settings</a>
+                                    <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action border-0 text-center me-2 d-none d-sm-block border-0 ">My Items</a>
+                                    <a href="/dashboard-security.html" class="list-group-item list-group-item-action border-0 text-center d-none d-md-block border-0 ">Security</a>
+                                </div>
+                                <div class="col-2 d-flex justify-content-center">
+                                    <div class="btn-group dropleft">
+                                        <button class="btn btn-link dropdown-toggle dropdown-toggle-split me-2 m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon icon-sm">
+                                                <span class="fas fa-ellipsis-h icon-secondary fa-lg"></span>
+                                            </span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action d-sm-none border-0 ">My Items</a>
+                                            <a href="/dashboard-security.html" class="list-group-item list-group-item-action d-md-none border-0 ">Security</a>
+                                            <a href="/dashboard-billing.html" class="list-group-item list-group-item-action border-0 ">Billing</a>
+                                            <a href="/dashboard-messages.html" class="list-group-item list-group-item-action border-0  active ">Messages</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h1 class="h5 mb-3">Inbox</h1>
+                        <select class="form-select fmxw-150 pe-5" id="inlineFormCustomSelectMessages" aria-label="Messages select example">
+                            <option>All messages</option>
+                            <option>Unread</option>
+                            <option>Favorite</option>
+                        </select>
+                    </div>
+                    <div class="card border-gray-300 mb-1 py-3">
+                        <div class="card-body d-flex align-items-center flex-wrap flex-lg-nowrap py-0">
+                            <div class="col-auto col-lg-1 d-flex align-items-center px-0">
+                                <div class="form-check inbox-check mb-0 me-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> 
+                                    <label class="form-check-label" for="defaultCheck1"></label>
+                                </div>
+                                <div class="rating-star d-none d-sm-inline-block">
+                                    <input type="checkbox" id="InboxStar1" name="star"> 
+                                    <label class="rating-star-label" for="InboxStar1">
+                                        <span class="sr-only">Star</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-8 ps-0 ms-2">
+                                <a href="./single-message.html" class="h6 text-sm">Neil Sims</a>
+                            </div>
+                            <div class="col col-lg-1 text-right px-0 order-lg-4">
+                                <span class="text-muted text-sm">Dec 25</span>
+                            </div>
+                            <div class="col-12 col-lg-7 d-flex align-items-center px-0">
+                                <div class="col col-lg-11 px-0">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap align-items-center">
+                                        <a href="./single-message.html" class="col-12 col-lg ps-0 fw-normal text-dark d-none d-sm-block mt-2 mt-lg-0">
+                                            I want to rent today, is the house still valid ... 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-gray-300 mb-1 py-3">
+                        <div class="card-body d-flex align-items-center flex-wrap flex-lg-nowrap py-0">
+                            <div class="col-auto col-lg-1 d-flex align-items-center px-0">
+                                <div class="form-check inbox-check mb-0 me-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2"> 
+                                    <label class="form-check-label" for="defaultCheck2"></label>
+                                </div>
+                                <div class="rating-star d-none d-sm-inline-block">
+                                    <input type="checkbox" id="InboxStar2" name="star"> 
+                                    <label class="rating-star-label" for="InboxStar2">
+                                        <span class="sr-only">Star</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-8 ps-0 ms-2">
+                                <a href="./single-message.html" class="h6 text-sm">Bonnie Green</a>
+                            </div>
+                            <div class="col col-lg-1 text-right px-0 order-lg-4">
+                                <span class="text-muted text-sm">Dec 22</span>
+                            </div>
+                            <div class="col-12 col-lg-7 d-flex align-items-center px-0">
+                                <div class="col col-lg-11 px-0">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap align-items-center">
+                                        <a href="./single-message.html" class="col-12 col-lg ps-0 fw-normal text-dark d-none d-sm-block mt-2 mt-lg-0">
+                                            I want to rent today, is the house still valid ... 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-gray-300 mb-1 py-3">
+                        <div class="card-body d-flex align-items-center flex-wrap flex-lg-nowrap py-0">
+                            <div class="col-auto col-lg-1 d-flex align-items-center px-0">
+                                <div class="form-check inbox-check mb-0 me-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3"> 
+                                    <label class="form-check-label" for="defaultCheck3"></label>
+                                </div>
+                                <div class="rating-star d-none d-sm-inline-block">
+                                    <input type="checkbox" id="InboxStar3" name="star" checked> 
+                                    <label class="rating-star-label" for="InboxStar3">
+                                        <span class="sr-only">Star</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-8 ps-0 ms-2">
+                                <a href="./single-message.html" class="h6 text-sm">Jose Leos</a>
+                            </div>
+                            <div class="col col-lg-1 text-right px-0 order-lg-4">
+                                <span class="text-muted text-sm">Dec 2</span>
+                            </div>
+                            <div class="col-12 col-lg-7 d-flex align-items-center px-0">
+                                <div class="col col-lg-11 px-0">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap align-items-center">
+                                        <a href="./single-message.html" class="col-12 col-lg ps-0 fw-light d-none d-sm-block mt-2 mt-lg-0">
+                                            I want to rent today, is the house still valid ... 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-gray-300 mb-1 py-3">
+                        <div class="card-body d-flex align-items-center flex-wrap flex-lg-nowrap py-0">
+                            <div class="col-auto col-lg-1 d-flex align-items-center px-0">
+                                <div class="form-check inbox-check mb-0 me-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4"> 
+                                    <label class="form-check-label" for="defaultCheck4"></label>
+                                </div>
+                                <div class="rating-star d-none d-sm-inline-block">
+                                    <input type="checkbox" id="InboxStar4" name="star" checked> 
+                                    <label class="rating-star-label" for="InboxStar4">
+                                        <span class="sr-only">Star</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-8 ps-0 ms-2">
+                                <a href="./single-message.html" class="h6 text-sm">Chris Garth</a>
+                            </div>
+                            <div class="col col-lg-1 text-right px-0 order-lg-4">
+                                <span class="text-muted text-sm">Nov 28</span>
+                            </div>
+                            <div class="col-12 col-lg-7 d-flex align-items-center px-0">
+                                <div class="col col-lg-11 px-0">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap align-items-center">
+                                        <a href="./single-message.html" class="col-12 col-lg ps-0 fw-light d-none d-sm-block mt-2 mt-lg-0">
+                                            I want to rent today, is the house still valid ... 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-gray-300 mb-1 py-3">
+                        <div class="card-body d-flex align-items-center flex-wrap flex-lg-nowrap py-0">
+                            <div class="col-auto col-lg-1 d-flex align-items-center px-0">
+                                <div class="form-check inbox-check mb-0 me-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5"> 
+                                    <label class="form-check-label" for="defaultCheck5"></label>
+                                </div>
+                                <div class="rating-star d-none d-sm-inline-block">
+                                    <input type="checkbox" id="InboxStar5" name="star"> 
+                                    <label class="rating-star-label" for="InboxStar5">
+                                        <span class="sr-only">Star</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-8 ps-0 ms-2">
+                                <a href="./single-message.html" class="h6 text-sm">Roberta Casas</a>
+                            </div>
+                            <div class="col col-lg-1 text-right px-0 order-lg-4">
+                                <span class="text-muted text-sm">Nov 12</span>
+                            </div>
+                            <div class="col-12 col-lg-7 d-flex align-items-center px-0">
+                                <div class="col col-lg-11 px-0">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap align-items-center">
+                                        <a href="./single-message.html" class="col-12 col-lg ps-0 fw-light d-none d-sm-block mt-2 mt-lg-0">
+                                            I want to rent today, is the house still valid ... 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-gray-300 mb-1 py-3">
+                        <div class="card-body d-flex align-items-center flex-wrap flex-lg-nowrap py-0">
+                            <div class="col-auto col-lg-1 d-flex align-items-center px-0">
+                                <div class="form-check inbox-check mb-0 me-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6"> 
+                                    <label class="form-check-label" for="defaultCheck6"></label>
+                                </div>
+                                <div class="rating-star d-none d-sm-inline-block">
+                                    <input type="checkbox" id="InboxStar6" name="star"> 
+                                    <label class="rating-star-label" for="InboxStar6">
+                                        <span class="sr-only">Star</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-8 ps-0 ms-2">
+                                <a href="./single-message.html" class="h6 text-sm">Chris Garth</a>
+                            </div>
+                            <div class="col col-lg-1 text-right px-0 order-lg-4">
+                                <span class="text-muted text-sm">Nov 15</span>
+                            </div>
+                            <div class="col-12 col-lg-7 d-flex align-items-center px-0">
+                                <div class="col col-lg-11 px-0">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap align-items-center">
+                                        <a href="./single-message.html" class="col-12 col-lg ps-0 fw-light d-none d-sm-block">
+                                            I want to rent today, is the house still valid ... 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-gray-300 mb-1 py-3">
+                        <div class="card-body d-flex align-items-center flex-wrap flex-lg-nowrap py-0">
+                            <div class="col-auto col-lg-1 d-flex align-items-center px-0">
+                                <div class="form-check inbox-check mb-0 me-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7"> 
+                                    <label class="form-check-label" for="defaultCheck7"></label>
+                                </div>
+                                <div class="rating-star d-none d-sm-inline-block">
+                                    <input type="checkbox" id="InboxStar7" name="star"> 
+                                    <label class="rating-star-label" for="InboxStar7">
+                                        <span class="sr-only">Star</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-8 ps-0 ms-2">
+                                <a href="./single-message.html" class="h6 text-sm">Robert Bailey</a>
+                            </div>
+                            <div class="col col-lg-1 text-right px-0 order-lg-4">
+                                <span class="text-muted text-sm">Oct 30</span>
+                            </div>
+                            <div class="col-12 col-lg-7 d-flex align-items-center px-0">
+                                <div class="col col-lg-11 px-0">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap align-items-center">
+                                        <a href="./single-message.html" class="col-12 col-lg ps-0 fw-light d-none d-sm-block">
+                                            I want to rent today, is the house still valid ... 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center mt-5">
+                            <li class="page-item">
+                                <a class="page-link" href="#">Previous</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

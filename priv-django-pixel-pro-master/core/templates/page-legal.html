@@ -1,0 +1,154 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Legal {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block nav_style %} navbar-transparent navbar-dark navbar-theme-primary {% endblock nav_style %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <section class="section-header bg-primary text-white pb-9 pb-lg-12 mb-4 mb-lg-6">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <h1 class="display-2 mb-3">Legal center</h1>
+                    <p class="lead">One place for our legal documentation and policies</p>
+                </div>
+            </div>
+        </div>
+        <div class="pattern bottom"></div>
+    </section>
+    <div class="section section-lg pt-0">
+        <div class="container mt-n8 mt-lg-n12 z-2">
+            <div class="row justify-content-center">
+                <div class="col col-md-10">
+                    <!--Accordion-->
+                    <div class="accordion bg-white rounded" id="accordionExample1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is a UI Kit?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <p>Pixel is a Premium web based User Interface Kit based on the popular Bootstrap 5 CSS Framework developed by Themesberg.</p>
+                                    <p>UI kits help you reduce the time of developing websites and web apps by having numerous components, sections and pages ready to be used.</p>
+                                    <p>Pixel is a highly customizable design system due to our increased efforts of using Sass variables, mixins and functions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Can I use Pixel for my clients?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Of course you can! You can use Pixel UI Kit to build as many websites as you want. The simple license only restricts you from selling a copy or a modified copy of Pixel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Are the fonts, icons and images the same as in the demo?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Of course! Everything you see in the demo page is what you will get if you buy our product.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Is there a money back guarantee?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Please read the following page regarding refunds: <a href="https://themesberg.com/refund-policy">Refund Policy</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Do I get free updates?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <p>Pixel is a product that our team will continuously update every month with extra components, sections, pages and plugins.</p>
+                                    <p class="mb-0">We will also make updates based on the feedback we get from our community, so feel free to let us know how we can upgrade our UI Kit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Where can I get support?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Got a question? Let us know and we'll try our best to answer you at the <a href="https://themesberg.com/contact">support center</a>.</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End of Accordion-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section section-lg pt-0 line-bottom-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 text-center px-4 mb-5">
+                    <div class="icon icon-sm icon-shape icon-shape-secondary rounded mb-4">
+                        <span class="fas fa-envelope-open-text"></span>
+                    </div>
+                    <h5 class="mb-3">Email us</h5>
+                    <p class="px-5 px-sm-7 px-lg-0">
+                        Email us for general queries, including marketing and partnership opportunities.                              
+                    </p>
+                    <a class="fw-bold text-primary" href="mailto:office@company.com">office@company.com</a>
+                </div>
+                <div class="col-12 col-lg-4 text-center px-4 mb-5">
+                    <div class="icon icon-sm icon-shape icon-shape-secondary rounded mb-4">
+                        <span class="fas fa-phone-volume"></span>
+                    </div>
+                    <h5 class="mb-3">Call us</h5>
+                    <p class="px-5 px-sm-7 px-lg-0">
+                        Call us to speak to a member of our team.We are always happy to help you.                             
+                    </p>
+                    <a class="fw-bold text-primary" href="#">+1 (234) 567890</a>
+                </div>
+                <div class="col-12 col-lg-4 text-center px-4">
+                    <div class="icon icon-sm icon-shape icon-shape-secondary rounded mb-4">
+                        <span class="fab fa-slack"></span>
+                    </div>
+                    <h5 class="mb-3">Slack</h5>
+                    <p class="px-5 px-sm-7 px-lg-0">
+                        Join our Slack community to chat with us and hundreds of Dovetail users.                           
+                    </p>
+                    <a class="btn btn-sm btn-outline-primary" href="#">
+                        Join our Slack
+                        <span class="fas fa-long-arrow-alt-right ms-2"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

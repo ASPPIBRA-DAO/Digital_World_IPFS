@@ -1,0 +1,72 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Counters {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <div class="section-header pb-6 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <h1 class="display-3 mb-4">Counters</h1>
+                    <p class="lead mb-5"><strong>CounterUp</strong> is a lightweight jQuery plugin that counts up to a targeted number when the number becomes visible.</p>
+                    <div class="alert bg-secondary" role="alert">
+                        <span class="fas fa-info-circle"></span>
+                        <a class="fw-bold text-white text-underline mx-1" href="https://themesberg.com/docs/pixel-bootstrap/plugins/jquery-counters/" target="_blank">See our Documentation</a> for a detailed technical explanation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Hero -->
+    
+    <!-- Section -->
+    <div class="section section-lg">
+        <div class="container">
+            <div class="row">
+                <!--Counter-->
+                <div class="col-12 col-sm-6 mb-3 col-lg-3 mb-5 mb-lg-0">
+                    <div class="icon icon-shape icon-shape-primary rounded-circle me-2 me-md-0 mb-2">
+                        <span class="far fa-grin-hearts"></span>
+                    </div>
+                    <span class="counter display-3 text-primary d-block">500</span>
+                    <span class="h5 text-gray">Happy people</span>
+                </div>
+                <!--End of Counter-->
+                <!--Counter-->
+                <div class="col-12 col-sm-6 mb-3 col-lg-3 mb-5 mb-lg-0">
+                    <div class="icon icon-shape icon-shape-secondary me-2 me-md-0 mb-2">
+                        <span class="fas fa-box-open"></span>
+                    </div>
+                    <span class="counter display-3 text-secondary d-block">1560</span>
+                    <span class="h5 text-gray">Units Ordered</span>
+                </div>
+                <!--End of Counter-->
+                <!--Counter-->
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                    <div class="icon icon-primary me-2 me-md-0 mb-4">
+                        <span class="fas fa-brain"></span>
+                    </div>
+                    <span class="counter display-3 text-primary d-block">12031</span>
+                    <span class="h5 text-gray">Lines of Code</span>
+                </div>
+                <!--End of Counter-->
+                <!--Counter-->
+                <div class="col-12 col-sm-6 col-lg-3 mb- mb-lg-0">
+                    <span class="counter display-3 text-dark d-block">500</span>
+                    <span class="h5 text-gray">Happy people</span>
+                </div>
+                <!--End of Counter-->
+            </div>
+        </div>
+    </div>
+    <!-- End of Section -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

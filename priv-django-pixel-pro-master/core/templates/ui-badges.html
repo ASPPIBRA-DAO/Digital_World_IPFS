@@ -1,0 +1,60 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Badges {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <div class="section-header pb-6 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <h1 class="display-3 mb-4">Badges</h1>
+                    <p class="lead mb-5">Examples for badges, our small count and labeling component.</p>
+                    <div class="alert bg-secondary align-items-center" role="alert">
+                        <span class="fas fa-info-circle"></span>
+                        <a class="fw-bold text-white text-underline ms-1" href="https://themesberg.com/docs/pixel-bootstrap/components/badges/" target="_blank">See our Documentation</a> for a detailed technical explanation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Hero -->
+
+    <!-- Section -->
+    <div class="section section-lg">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col">
+                    <a href="#" class="badge bg-primary">Primary</a>
+                    <a href="#" class="badge bg-secondary">Secondary</a>
+                    <a href="#" class="badge bg-tertiary">Tertiary</a>
+                    <a href="#" class="badge bg-gray">Gray</a>
+                    <a href="#" class="badge bg-success">Success</a>
+                    <a href="#" class="badge bg-danger">Danger</a>
+                    <a href="#" class="badge bg-warning text-dark">Warning</a>
+                    <a href="#" class="badge bg-info">Info</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <button type="button" class="btn btn-tertiary mb-2 mb-md-0">
+                        Messages <span class="badge bg-warning">9</span>
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        Notifications <span class="badge bg-pill bg-success">5</span>
+                        <span class="sr-only">unread messages</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Section -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

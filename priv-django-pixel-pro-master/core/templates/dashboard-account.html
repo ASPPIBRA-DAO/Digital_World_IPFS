@@ -1,0 +1,197 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard Account {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block nav_style %} navbar-light navbar-transparent navbar-theme-secondary {% endblock nav_style %}
+
+{% block content %}
+
+    <div class="section section-lg pt-5 pt-md-7 bg-gray-200">
+        <div class="container">
+            <div class="row pt-5 pt-md-0">
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <!-- Navigation -->
+                    <div class="card border-gray-300 p-2">
+                        <div class="card-header bg-white border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
+                            <div class="profile-thumbnail dashboard-avatar mx-lg-auto me-3">
+                                <img src="/static/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bonnie Green Portrait">
+                            </div>
+                            <span class="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, Bonnie!</span>
+                            <a href="#" class="btn btn-gray-300 btn-xs"><span class="me-2"><span class="fas fa-sign-out-alt"></span></span>Sign Out</a>
+                        </div>
+                        <div class="card-body p-2 d-none d-lg-block">
+                            <div class="list-group dashboard-menu list-group-sm">
+                                <a href="/dashboard-account.html" class="d-flex list-group-item border-0 list-group-item-action  active ">Overview <span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-settings.html" class="d-flex list-group-item border-0 list-group-item-action ">Settings<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-my-items.html" class="d-flex list-group-item border-0 list-group-item-action ">My Items<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-security.html" class="d-flex list-group-item border-0 list-group-item-action ">Security<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-billing.html" class="d-flex list-group-item border-0 list-group-item-action ">Billing<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-messages.html" class="d-flex list-group-item border-0 list-group-item-action  border-0">Messages<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <div class="card bg-white border-gray-300 mb-4 mb-lg-5">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-10 d-flex">
+                                    <a href="/dashboard-account.html" class="list-group-item list-group-item-action border-0 text-center me-2  active ">Overview</a>
+                                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action border-0 text-center me-2 ">Settings</a>
+                                    <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action border-0 text-center me-2 d-none d-sm-block border-0 ">My Items</a>
+                                    <a href="/dashboard-security.html" class="list-group-item list-group-item-action border-0 text-center d-none d-md-block border-0 ">Security</a>
+                                </div>
+                                <div class="col-2 d-flex justify-content-center">
+                                    <div class="btn-group dropleft">
+                                        <button class="btn btn-link dropdown-toggle dropdown-toggle-split me-2 m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon icon-sm">
+                                                <span class="fas fa-ellipsis-h icon-secondary fa-lg"></span>
+                                            </span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action d-sm-none border-0 ">My Items</a>
+                                            <a href="/dashboard-security.html" class="list-group-item list-group-item-action d-md-none border-0 ">Security</a>
+                                            <a href="/dashboard-billing.html" class="list-group-item list-group-item-action border-0 ">Billing</a>
+                                            <a href="/dashboard-messages.html" class="list-group-item list-group-item-action border-0 ">Messages</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-4">
+                            <div class="card border-gray-300">
+                                <div class="card-body d-block d-md-flex align-items-center">
+                                <div class="icon icon-shape icon-md icon-shape-primary rounded-circle me-3 mb-4 mb-md-0"><span class="fas fa-wallet"></span></div>
+                                <div>
+                                    <span class="d-block h6 fw-normal">
+                                        Global Budget 
+                                    </span>
+                                    <h5 class="h3 fw-bold mb-1">$25,370.00</h5>
+                                    <div class="small mt-2">                               
+                                        <span class="fas fa-angle-up text-success"></span>                                   
+                                        <span class="text-success fw-bold">18.2%</span> higher vs previous month
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-4">
+                            <div class="card border-gray-300">
+                                <div class="card-body d-block d-md-flex align-items-center">
+                                    <div class="icon icon-shape icon-md icon-shape-primary rounded-circle me-3 mb-4 mb-md-0"><span class="fas fa-file-invoice-dollar"></span></div>
+                                    <div>
+                                        <span class="d-block h6 fw-normal">
+                                            Sales 
+                                        </span>
+                                        <h5 class="h3 fw-bold mb-1">$5,220.00</h5>
+                                        <div class="small mt-2">                               
+                                            <span class="fas fa-angle-up text-success"></span>                                   
+                                            <span class="text-success fw-bold">4.2%</span> higher vs previous month
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="card border-gray-300">
+                                <div class="card-body d-flex flex-row align-items-center flex-0 border-bottom">
+                                    <div class="d-block">
+                                        <div class="h6 fw-normal text-gray mb-2">New customers</div>
+                                        <h2 class="h3">452</h2>
+                                        <div class="small mt-2">                               
+                                            <span class="fas fa-angle-up text-success"></span>                                   
+                                            <span class="text-success fw-bold">18.2%</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-block ms-auto">
+                                        <div class="d-flex align-items-center text-right mb-2">
+                                            <span class="shape-xs rounded-circle bg-dark me-2"></span>
+                                            <span class="fw-normal small">Last month</span>
+                                        </div>
+                                        <div class="d-flex align-items-center text-right">
+                                            <span class="shape-xs rounded-circle bg-tertiary me-2"></span>
+                                            <span class="fw-normal small">This month</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="ct-chart-5 ct-golden-section ct-series-e"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="card border-gray-300">
+                                <div class="card-body d-flex flex-row align-items-center flex-0 border-bottom">
+                                    <div class="d-block">
+                                        <div class="h6 fw-normal text-gray mb-2">Revenues</div>
+                                        <h2 class="h3">10,567</h2>
+                                        <div class="small mt-2">                               
+                                            <span class="fas fa-angle-up text-success"></span>                                   
+                                            <span class="text-success fw-bold">$10.57%</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-block ms-auto">
+                                        <div class="d-flex align-items-center text-right mb-2">
+                                            <span class="shape-xs rounded-circle bg-dark me-2"></span>
+                                            <span class="fw-normal small">Real Estate</span>
+                                        </div>
+                                        <div class="d-flex align-items-center text-right mb-2">
+                                            <span class="shape-xs rounded-circle bg-tertiary me-2"></span>
+                                            <span class="fw-normal small">Electronic</span>
+                                        </div>
+                                        <div class="d-flex align-items-center text-right mb-2">
+                                            <span class="shape-xs rounded-circle bg-primary me-2"></span>
+                                            <span class="fw-normal small">Clothes</span>
+                                        </div>
+                                        <div class="d-flex align-items-center text-right">
+                                            <span class="shape-xs rounded-circle bg-success me-2"></span>
+                                            <span class="fw-normal small">Auto</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="ct-chart-7 ct-golden-section ct-series-e"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card border-gray-300">
+                                <div class="card-body d-flex flex-row align-items-center flex-0 border-bottom">
+                                    <div class="d-block">
+                                        <div class="h6 fw-normal text-gray mb-2">Sales Value</div>
+                                        <h2 class="h3">10,567</h2>
+                                        <div class="small mt-2">                               
+                                            <span class="fas fa-angle-up text-success"></span>                                   
+                                            <span class="text-success fw-bold">$10.57%</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-auto">
+                                        <a href="#" class="btn btn-tertiary btn-sm me-3">Month</a>
+                                        <a href="#" class="btn btn-white border-gray-300 btn-sm me-3">Week</a>
+                                    </div>
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="ct-chart-8 ct-major-tenth ct-series-b"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

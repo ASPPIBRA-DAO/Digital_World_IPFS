@@ -1,0 +1,364 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard My Items {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block nav_style %} navbar-light navbar-transparent navbar-theme-secondary {% endblock nav_style %}
+
+{% block content %}
+
+    <div class="section section-lg pt-5 pt-md-7 bg-gray-200">
+        <div class="container">
+            <div class="row pt-5 pt-md-0">
+
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <!-- Navigation -->
+                    <div class="card border-gray-300 p-2">
+                        <div class="card-header bg-white border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
+                            <div class="profile-thumbnail dashboard-avatar mx-lg-auto me-3">
+                                <img src="/static/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bonnie Green Portrait">
+                            </div>
+                            <span class="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, Bonnie!</span>
+                            <a href="#" class="btn btn-gray-300 btn-xs"><span class="me-2"><span class="fas fa-sign-out-alt"></span></span>Sign Out</a>
+                        </div>
+                        <div class="card-body p-2 d-none d-lg-block">
+                            <div class="list-group dashboard-menu list-group-sm">
+                                <a href="/dashboard-account.html" class="d-flex list-group-item border-0 list-group-item-action ">Overview <span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-settings.html" class="d-flex list-group-item border-0 list-group-item-action ">Settings<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-my-items.html" class="d-flex list-group-item border-0 list-group-item-action  active ">My Items<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-security.html" class="d-flex list-group-item border-0 list-group-item-action ">Security<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-billing.html" class="d-flex list-group-item border-0 list-group-item-action ">Billing<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                                <a href="/dashboard-messages.html" class="d-flex list-group-item border-0 list-group-item-action  border-0">Messages<span class="icon icon-xs ms-auto"><span class="fas fa-chevron-right"></span></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-lg-none">
+                    <div class="card bg-white border-gray-300 mb-4 mb-lg-5">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-10 d-flex">
+                                    <a href="/dashboard-account.html" class="list-group-item list-group-item-action border-0 text-center me-2 ">Overview</a>
+                                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action border-0 text-center me-2 ">Settings</a>
+                                    <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action border-0 text-center me-2 d-none d-sm-block border-0  active ">My Items</a>
+                                    <a href="/dashboard-security.html" class="list-group-item list-group-item-action border-0 text-center d-none d-md-block border-0 ">Security</a>
+                                </div>
+                                <div class="col-2 d-flex justify-content-center">
+                                    <div class="btn-group dropleft">
+                                        <button class="btn btn-link dropdown-toggle dropdown-toggle-split me-2 m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon icon-sm">
+                                                <span class="fas fa-ellipsis-h icon-secondary fa-lg"></span>
+                                            </span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a href="/dashboard-my-items.html" class="list-group-item list-group-item-action d-sm-none border-0  active ">My Items</a>
+                                            <a href="/dashboard-security.html" class="list-group-item list-group-item-action d-md-none border-0 ">Security</a>
+                                            <a href="/dashboard-billing.html" class="list-group-item list-group-item-action border-0 ">Billing</a>
+                                            <a href="/dashboard-messages.html" class="list-group-item list-group-item-action border-0 ">Messages</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="d-grid">
+                                <a href="/dashboard-edit-item.html" class="btn btn-outline-secondary mb-4 py-3">
+                                    <span class="me-2"><span class="fas fa-plus"></span></span>Submit New Item
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <div class="card border-gray-300 mb-4">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-12 col-lg-6 col-xl-4">
+                                        <a href="#">
+                                            <img src="/static/assets/img/shop/item-3.jpg" alt="macbook pro"
+                                                class="card-img p-2 rounded-xl">
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-xl-8">
+                                        <div class="card-body py-lg-0">
+                                            <div class="d-flex g-0 align-items-center mb-2">
+                                                <div class="col text-left">
+                                                    <ul class="list-group mb-0">
+                                                        <li class="list-group-item border-0 small p-0"><span
+                                                                class="fas fa-medal text-tertiary me-2"></span>Promoted
+                                                            until: 12 June</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col text-right">
+                                                    <div class="btn-group">
+                                                        <button
+                                                            class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
+                                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                            <span class="icon icon-sm">
+                                                                <span
+                                                                    class="fas fa-ellipsis-h icon-secondary"></span>
+                                                            </span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu py-0">
+                                                            <a class="dropdown-item rounded-top"
+                                                                href="./edit-item.html"><span
+                                                                    class="fas fa-edit me-2"></span>Edit Item</a>
+                                                            <a class="dropdown-item"><span
+                                                                    class="fas fa-chart-line me-2"></span>Statistics</a>
+                                                            <a class="dropdown-item text-danger rounded-bottom"
+                                                                href="#"><span class="fa fa-trash me-2"
+                                                                    aria-hidden="true"></span>Disable</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#">
+                                                <h2 class="h5">Apple MacBook Pro 15in Core i7 2.8GHz Retina, 16GB
+                                                    RAM, 512GB SSD</h2>
+                                            </a>
+                                            <div class="col d-flex ps-0">
+                                                <span class="text-success font-small me-3"><span
+                                                        class="fas fa-check-circle me-2"></span>Active</span>
+                                                <span class="text-muted font-small me-3"><span
+                                                        class="fas fa-eye me-2"></span>680</span>
+                                                <span class="text-muted font-small me-3"><span
+                                                        class="far fa-heart me-2"></span>10</span>
+                                                <a class="font-small text-dark" href="/dashboard-messages.html"><span
+                                                        class="fas fa-envelope me-2"></span>8</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <div class="card border-gray-300 mb-4">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-12 col-lg-6 col-xl-4">
+                                        <a href="#">
+                                            <img src="/static/assets/img/shop/item-4.jpg" alt="meeting office"
+                                                class="card-img p-2 rounded-xl">
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-xl-8">
+                                        <div class="card-body py-lg-0">
+                                            <div class="d-flex g-0 align-items-center mb-2">
+                                                <div class="col text-left">
+                                                    <ul class="list-group mb-0">
+                                                        <li class="list-group-item border-0 small p-0"><span
+                                                                class="fas fa-medal text-tertiary me-2"></span>Promoted
+                                                            until: 12 June</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col text-right">
+                                                    <div class="btn-group">
+                                                        <button
+                                                            class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
+                                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                            <span class="icon icon-sm">
+                                                                <span
+                                                                    class="fas fa-ellipsis-h icon-secondary"></span>
+                                                            </span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu py-0">
+                                                            <a class="dropdown-item text-success rounded-top"
+                                                                href="#"><span class="fas fa-plus me-2"
+                                                                    aria-hidden="true"></span> Publish</a>
+                                                            <a class="dropdown-item" href="./edit-item.html"><span
+                                                                    class="fas fa-edit me-2"></span>Edit Item</a>
+                                                            <a class="dropdown-item rounded-bottom"><span
+                                                                    class="fas fa-chart-line me-2"></span>Statistics</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#">
+                                                <h2 class="h5">Meeting Workspace</h2>
+                                            </a>
+                                            <div class="col d-flex ps-0">
+                                                <span class="text-danger font-small me-3"><span
+                                                        class="fas fa-times-circle me-2"></span>Disabled</span>
+                                                <span class="text-muted font-small me-3"><span
+                                                        class="fas fa-eye me-2"></span>3880</span>
+                                                <span class="text-muted font-small me-3"><span
+                                                        class="far fa-heart me-2"></span>30</span>
+                                                <a class="font-small text-dark" href="/dashboard-messages.html"><span
+                                                        class="fas fa-envelope me-2"></span>80</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <div class="card border-gray-300 mb-4">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-12 col-lg-6 col-xl-4">
+                                        <a href="#">
+                                            <img src="/static/assets/img/shop/item-5.jpg" alt="audi car"
+                                                class="card-img p-2 rounded-xl">
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-xl-8">
+                                        <div class="card-body py-lg-0">
+                                            <div class="d-flex g-0 align-items-center mb-3">
+                                                <div class="col text-left">
+                                                    <ul class="list-group mb-0">
+                                                        <li class="list-group-item border-0 small p-0"><span
+                                                                class="fas fa-medal text-tertiary me-2"></span>Promoted
+                                                            until: 24 June</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col text-right">
+                                                    <div class="btn-group">
+                                                        <button
+                                                            class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
+                                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                            <span class="icon icon-sm">
+                                                                <span
+                                                                    class="fas fa-ellipsis-h icon-secondary"></span>
+                                                            </span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu py-0">
+                                                            <a class="dropdown-item rounded-top"
+                                                                href="./edit-item.html"><span
+                                                                    class="fas fa-edit me-2"></span>Edit Item</a>
+                                                            <a class="dropdown-item"><span
+                                                                    class="fas fa-chart-line me-2"></span>Statistics</a>
+                                                            <a class="dropdown-item text-danger rounded-bottom"
+                                                                href="#"><span class="fa fa-trash me-2"
+                                                                    aria-hidden="true"></span>Disable</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#">
+                                                <h2 class="h5">Audi RS6 4.0 TFSI V8 Avant Tiptronic</h2>
+                                            </a>
+                                            <div class="col d-flex ps-0">
+                                                <span class="text-success font-small me-3"><span
+                                                        class="fas fa-check-circle me-2"></span>Active</span>
+                                                <span class="text-muted font-small me-3"><span
+                                                        class="fas fa-eye me-2"></span>680</span>
+                                                <span class="text-muted font-small me-3"><span
+                                                        class="far fa-heart me-2"></span>10</span>
+                                                <a class="font-small text-dark" href="/dashboard-messages.html"><span
+                                                        class="fas fa-envelope me-2"></span>8</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <div class="card border-gray-300 mb-4">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-12 col-lg-6 col-xl-4">
+                                        <a href="#">
+                                            <img src="/static/assets/img/shop/item-6.jpg" alt="green dress"
+                                                class="card-img p-2 rounded-xl">
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-xl-8">
+                                        <div class="card-body py-lg-0">
+                                            <div class="d-flex g-0 align-items-center mb-3">
+                                                <div class="col text-left">
+                                                    <ul class="list-group mb-0">
+                                                        <li class="list-group-item border-0 small p-0"><span
+                                                                class="fas fa-medal text-tertiary me-2"></span>Promoted
+                                                            until: 12 June</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col text-right">
+                                                    <div class="btn-group">
+                                                        <button
+                                                            class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
+                                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                            <span class="icon icon-sm">
+                                                                <span
+                                                                    class="fas fa-ellipsis-h icon-secondary"></span>
+                                                            </span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </button>
+                                                        <div class="dropdown-menu py-0">
+                                                            <a class="dropdown-item rounded-top"
+                                                                href="./edit-item.html"><span
+                                                                    class="fas fa-edit me-2"></span>Edit Item</a>
+                                                            <a class="dropdown-item"><span
+                                                                    class="fas fa-chart-line me-2"></span>Statistics</a>
+                                                            <a class="dropdown-item text-danger rounded-bottom"
+                                                                href="#"><span class="fa fa-trash me-2"
+                                                                    aria-hidden="true"></span>Disable</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#">
+                                                <h2 class="h5">Adrianna Papell Women's Beaded Green Long Dress</h2>
+                                            </a>
+                                            <div class="col d-flex ps-0">
+                                                <span class="text-success font-small me-3"><span
+                                                        class="fas fa-check-circle me-2"></span>Active</span>
+                                                <span class="text-muted font-small me-3"><span
+                                                        class="fas fa-eye me-2"></span>680</span>
+                                                <span class="text-muted font-small me-3"><span
+                                                        class="far fa-heart me-2"></span>10</span>
+                                                <a class="font-small text-dark" href="/dashboard-messages.html"><span
+                                                        class="fas fa-envelope me-2"></span>8</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center mt-4 mt-lg-5">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Previous</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

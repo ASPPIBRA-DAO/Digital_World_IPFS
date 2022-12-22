@@ -1,0 +1,59 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Charts {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Hero -->
+    <div class="section-header pb-6 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 text-center">
+                    <h1 class="display-3 mb-4">Charts</h1>
+                    <p class="lead mb-5">Simple yet flexible JavaScript charting for designers & developers</p>
+                    <div class="alert bg-secondary" role="alert">
+                        <span class="fas fa-info-circle"></span>
+                        <a class="fw-bold text-white text-underline mx-1" href="https://themesberg.com/docs/pixel-bootstrap/plugins/charts/" target="_blank">See our Documentation</a> for a detailed technical explanation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Hero -->
+    <!-- Section -->
+    <div class="section section-md">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-5">
+                    <div class="ct-chart-5 ct-golden-section ct-series-e"></div>
+                </div>
+                <div class="col-12 col-md-6 mb-5">
+                    <div class="ct-chart-6 ct-golden-section ct-series-a"></div>
+                </div>
+                <div class="col-12 col-md-6 mb-5">
+                    <div class="ct-chart-8 ct-golden-section ct-series-a"></div>
+                </div>
+                <div class="col-12 col-md-6 mb-5">
+                    <div class="ct-chart-11 ct-golden-section ct-series-a"></div>
+                </div>
+                <div class="col-12 col-md-6 mb-5">
+                    <div class="ct-chart-7 ct-golden-section ct-series-a"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ct-chart-9 ct-golden-section ct-series-a"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ct-chart-10 ct-golden-section ct-series-a"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Section -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
